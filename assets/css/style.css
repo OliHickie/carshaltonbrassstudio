@@ -4,6 +4,15 @@
  /* colors
 grey: #8f9aad */
 
+.col {
+    padding: 0;
+}
+
+.row {
+    padding: 0px;
+    margin: 0px
+}
+
 /* text colors  */
 
 .pink-text {
@@ -11,9 +20,17 @@ grey: #8f9aad */
     text-shadow: 0.5px 0.5px black;
 }
 
+.pink-text:hover {
+    color: #ae000e;
+}
+
 .green-text {
     color: #8DD1BA;
     text-shadow: 0.5px 0.5px black;
+}
+
+.green-text:hover {
+    color: #2b6d57;
 }
 
 .blue-text {
@@ -21,41 +38,46 @@ grey: #8f9aad */
     text-shadow: 0.5px 0.5px black;
 }
 
+.blue-text:hover {
+    color: #006380;
+}
+
 .yellow-text {
     color: #fff900;
     text-shadow: 0.5px 0.5px black;
 }
+.yellow-text:hover {
+    color: #999500;
+}
+
 
 .purple-text {
     color: #CE9DD9;
     text-shadow: 0.5px 0.5px black;
 }
+.purple-text:hover {
+    color: #906d97;
+}
+
 
 /* Nav bar */
 
 .logo{
-    /* border-radius: 50%; */
-    height: 200px;
+    max-width: 10%;
+    height: auto;
+    min-width: 100px;
     margin-left: 20px;
     margin-top: -30px;
     position: absolute;
-    /* border: 1px solid #8F96A0;  */
     border-radius: 50%; 
+    z-index: 100;
 }
 
 .navbar {
     position: fixed;
     width: 100%;
-    max-height: 100%;
+    /* height: 85px; */
     background-color: #8F96A0;
-    z-index: 10;
-}
-
-.nav-container {
-    width: 100%;
-    margin-right: 150px;
-    display: flex;
-    align-items: center; 
 }
 
 .nav-container ul {
@@ -64,9 +86,9 @@ grey: #8f9aad */
 
 .navbar li {
     display: inline-block;
-    align-items: flex-end;
+    margin-left: 20px;
+    margin-right: 20px;
     padding: 10px;
-    margin-left: 30px;
     font-family: 'Bubblegum Sans', sans-serif;
     font-size: 200%;
 }
@@ -75,56 +97,37 @@ grey: #8f9aad */
     text-decoration: none;
 }
 
-.navbar li a:hover {
-    color: #fafafa;
-}
-
-.active {
-    border-bottom: 2px solid;
-}
-
 .navbar button {
-    margin-right: 5%;
+    padding: 5px;
+    margin: 2% 3%;
 }
 
 @media screen and (max-width: 960px) {
-    .nav-container {
-        width: 100%;
-        margin-right: 0px;
-        display: block;
+    .navbar li {
+        font-size: 25px;
+        padding: 5px;
     }
-    .navbar {
-    overflow-y: scroll;
-    }
-    .logo{
-    border-radius: 50%;
-    height: 100px;
-    margin-left: 20px;
-    margin-top: -10px;
-    position: fixed;
-}
-}
+} 
 
 /* Hero Section  */
 
 .bg-img {
     background: url(../images/hero-img.png);
     background-size: cover;
-    height: 100%; 
+    min-height: 90vh; 
     background-attachment: fixed;
     background-repeat: no-repeat;
-    margin-top: 116px;
+    margin-top: 75px;
 
 }
 
-.hero-heading {
+.hero-heading-container {
     font-family: 'Bubblegum Sans', cursive;
     background-color: rgba(80, 91, 106, 0.7);
     margin-left: 20%;
     margin-right: 20%;
     margin-top: 45px;
     border-radius: 25px;
-    position: relative;
     padding: 60px;
 }
 
@@ -143,8 +146,8 @@ grey: #8f9aad */
 
 .cta-enquire {
     font-size: 2em;
-    color: #bd6068;
-    background-color: #FF9AA2;
+    color: #2b6d57;
+    background-color: #8DD1BA;
     padding: 5px 20px;
     text-decoration: none;
     border-radius: 100px;
@@ -154,12 +157,12 @@ grey: #8f9aad */
 }
 
 .cta-enquire:hover {
-    color: #FF9AA2;
-    background-color: #bd6068 ;
+    color: #8DD1BA;
+    background-color: #2b6d57 ;
 }
 
 @media screen and (max-width: 960px) {
-    .hero-heading {
+    .hero-heading-container {
     margin-left: 5%;
     margin-right: 5%;
     padding: 30px;
@@ -167,7 +170,7 @@ grey: #8f9aad */
 }
 
 @media screen and (max-width: 280px) {
-    .hero-heading {
+    .hero-heading-container {
     margin-left: 2%;
     margin-right: 2%;
     padding: 15px;
@@ -177,4 +180,30 @@ grey: #8f9aad */
     font-size: 2em;
     text-shadow: 5px 5px #000;
 }
+}
+
+/* Footer  */
+
+.footer {
+    background-color: #8F96A0;
+    padding: 10px;
+}
+
+.social-nav-item {
+    font-size: 35px;
+}
+
+.social-icons-list {
+    display: flex;
+    justify-content: space-between;
+    width: 33%;
+    margin: 0 auto;  
+    font-size: 200%;
+}
+
+@media screen and (max-width: 768px) {
+    .social-icons-list {
+        width: 70%;
+        font-size: 150%;
+    }
 }
