@@ -186,7 +186,7 @@ navy: #002e4c
 }
 .callout {
         color: #8DD1BA;
-        font-size: 1em;
+        font-size: 3§em;
         text-shadow: 5px 5px #000;
 }
 }
@@ -208,6 +208,24 @@ navy: #002e4c
     width: 33%;
     margin: 0 auto;  
     font-size: 200%;
+}
+
+.copyright {
+    font-family: 'Roboto', sans-serif;
+    font-size: medium;
+    color: #fafafa;
+    margin: 0;
+    letter-spacing: 0.75px;
+}
+
+.copyright a {
+    text-decoration: none;
+    color: #002e4c;
+    letter-spacing: 0.75px;
+}
+
+.copyright a:hover {
+    color: #fafafa;
 }
 
 @media screen and (max-width: 768px) {
