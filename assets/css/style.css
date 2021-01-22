@@ -24,6 +24,7 @@ navy: #002e4c
 
 .pink-text:hover {
     color: #ae000e;
+    opacity:0.5;
 }
 
 .green-text {
@@ -113,22 +114,20 @@ navy: #002e4c
 /* Hero Section  */
 
 .bg-img {
-    background: url(../images/hero-img.png);
+    background: url(../images/hero-img.png) no-repeat scroll center;
     background-size: cover;
-    min-height: 90vh; 
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    margin-top: 75px;
+    min-height: 80vh; 
+    margin: 50px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero-heading-container {
     font-family: 'Bubblegum Sans', cursive;
     background-color: rgba(80, 91, 106, 0.7);
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-top: 45px;
     border-radius: 25px;
-    padding: 60px;
+    padding: 45px;
 }
 
 .callout {
@@ -177,14 +176,6 @@ navy: #002e4c
     margin-top: 25px;
     margin-bottom: 25px;
     }
-    .bg-img {
-    background: url(../images/hero-img.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    margin-top: 75px;
-}
 }
 
 @media screen and (max-width: 280px) {
