@@ -160,7 +160,11 @@ navy: #2e294e
 
 .cta-enquire:hover {
     color: #8DD1BA;
-    background-color: #2b6d57 ;
+    background-color: #2b6d57;
+}
+
+.cta-enquire:active {
+    padding: 1px 15px;
 }
 
 @media screen and (max-width: 960px) {
@@ -242,13 +246,17 @@ navy: #2e294e
 
 
 .jumbotron-contact {
-    background-color: rgba(255, 255, 0, 0.8);
+    background-color: rgba(80, 91, 106, 0.7);
     font-family: 'Bubblegum Sans', cursive;
-    color: #1a3da6;
+    color: #8DD1BA;
     padding: 30px;
     border-radius: 25px;
     margin: 0px 20px;
     max-height: 80%;
+}
+
+.jumbotron-contact h1 {
+    text-shadow: 2px 2px #2e294e;
 }
 
 .jumbotron-contact a {
@@ -257,15 +265,17 @@ navy: #2e294e
     text-decoration: none;
     letter-spacing: 0.2px;
     color: #1a3da6;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 25px;
+    padding-right: 15px;
 }
 
 .jumbotron-contact a:hover {
-    font-weight: 100;
+    font-weight: 200;
 }
 
 .jumbotron-contact a i {
     font-size: 30px;
-    /* color: red; */
     margin: 15px;
 }
 
