@@ -206,6 +206,7 @@ navy: #2e294e
     width: 100%;
     display: block;
     position: sticky;
+    bottom: 0;
 }
 
 .social-nav-item {
