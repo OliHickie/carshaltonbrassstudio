@@ -3,7 +3,7 @@
 
  /* colors
 grey: #8f9aad
-navy: #002e4c
+navy: #2e294e
 */
 
 .col {
@@ -19,7 +19,7 @@ navy: #002e4c
 
 .pink-text {
     color: #FF9AA2;
-    text-shadow: 0.5px 0.5px #002e4c;
+    text-shadow: 0.5px 0.5px #2e294e;
 }
 
 .pink-text:hover {
@@ -38,7 +38,7 @@ navy: #002e4c
 
 .blue-text {
     color: #80E2FF;
-    text-shadow: 0.5px 0.5px #002e4c;
+    text-shadow: 0.5px 0.5px #2e294e;
 }
 
 .blue-text:hover {
@@ -47,7 +47,7 @@ navy: #002e4c
 
 .yellow-text {
     color: #fff900;
-    text-shadow: 0.5px 0.5px #002e4c;
+    text-shadow: 0.5px 0.5px #2e294e;
 }
 .yellow-text:hover {
     color: #999500;
@@ -56,7 +56,7 @@ navy: #002e4c
 
 .purple-text {
     color: #CE9DD9;
-    text-shadow: 0.5px 0.5px #002e4c;
+    text-shadow: 0.5px 0.5px #2e294e;
 }
 .purple-text:hover {
     color: #906d97;
@@ -64,6 +64,9 @@ navy: #002e4c
 
 
 /* Nav bar */
+#navbar {
+    transition: top 0.5s
+}
 
 .logo{
     max-width: 10%;
@@ -111,12 +114,10 @@ navy: #002e4c
     }
 } 
 
-/* Hero Section  */
-
 .bg-img {
-    background: url(../images/hero-img.png) no-repeat scroll center;
+    background: url(../images/hero-img.png) no-repeat scroll top center;
     background-size: cover;
-    min-height: 80vh; 
+    min-height: 75vh; 
     margin: 50px 0px;
     display: flex;
     align-items: center;
@@ -128,12 +129,13 @@ navy: #002e4c
     background-color: rgba(80, 91, 106, 0.7);
     border-radius: 25px;
     padding: 45px;
+    margin-top: 25px;
 }
 
 .callout {
     color: #8DD1BA;
     font-size: 4em;
-    text-shadow: 2px 2px #002e4c;
+    text-shadow: 2px 2px #2e294e;
 }
 
 .subheading {
@@ -220,7 +222,7 @@ navy: #002e4c
 
 .copyright a {
     text-decoration: none;
-    color: #002e4c;
+    color: #2e294e;
     letter-spacing: 0.75px;
 }
 
