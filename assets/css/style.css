@@ -206,7 +206,6 @@ navy: #2e294e
     width: 100%;
     display: block;
     position: sticky;
-    bottom: 0;
 }
 
 .social-nav-item {
@@ -244,6 +243,13 @@ navy: #2e294e
         width: 70%;
         font-size: 150%;
     }
+}
+
+.about-us-container {
+    height: 200px;
+    background-color: #FF9AA2;
+    border-radius: 25px;
+    opacity: 0.5;
 }
 
 
