@@ -64,9 +64,6 @@ navy: #2e294e
 
 
 /* Nav bar */
-#navbar {
-    transition: top 0.5s
-}
 
 .logo{
     max-width: 10%;
@@ -118,10 +115,14 @@ navy: #2e294e
     background: url(../images/hero-img.png) no-repeat scroll top center;
     background-size: cover;
     min-height: 75vh; 
-    margin: 50px 0px;
+    margin-top: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.vh-90 {
+    height: 90vh;
 }
 
 .hero-heading-container {
@@ -198,6 +199,8 @@ navy: #2e294e
 .footer {
     background-color: #8F96A0;
     padding: 10px;
+    width: 100%;
+    display: block;
 }
 
 .social-nav-item {
@@ -235,4 +238,37 @@ navy: #2e294e
         width: 70%;
         font-size: 150%;
     }
+}
+
+
+.jumbotron-contact {
+    background-color: rgba(255, 255, 0, 0.8);
+    font-family: 'Bubblegum Sans', cursive;
+    color: #1a3da6;
+    padding: 30px;
+    border-radius: 25px;
+    margin: 0px 20px;
+    max-height: 80%;
+}
+
+.jumbotron-contact a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    letter-spacing: 0.2px;
+    color: #1a3da6;
+}
+
+.jumbotron-contact a:hover {
+    font-weight: 700;
+}
+
+.jumbotron-contact a i {
+    font-size: 30px;
+    /* color: red; */
+    margin: 15px;
+}
+
+.contact-info {
+    padding: 30px;
 }
