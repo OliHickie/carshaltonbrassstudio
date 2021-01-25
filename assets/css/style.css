@@ -203,12 +203,6 @@ navy: #2e294e
 .footer {
     background-color: #8F96A0;
     padding: 10px;
-    width: 100%;
-    display: block;
-    position: sticky;
-    position: -webkit-sticky;
-    position: -moz-sticky;
-    position: -o-sticky;
 }
 
 .social-nav-item {
