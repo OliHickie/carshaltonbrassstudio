@@ -123,7 +123,7 @@ navy: #2e294e
 }
 
 .vh-90 {
-    height: 90vh;
+    min-height: 90vh;
 }
 
 .hero-heading-container {
@@ -245,32 +245,32 @@ navy: #2e294e
 }
 
 /* Index */
-
-
-.about-img-studio img {
-   margin: 20px auto;
-   display: block;
-   width: 40%;
-   border-radius: 25px;
-   border: solid 3px #bf7379;
-   padding: 10px;
-}
-
-.about-img-people img {
-   margin: 20px auto;
-   display: block;
-   width: 40%;
-   border-radius: 25px;
-   border: solid 3px #80c2ff;
-   padding: 10px;
+.about-cards {
+    padding: 5px;
 }
 
 .card {
     border-radius: 25px;
     padding: 15px;
     margin: 15px 0px;
-    display: inline-block;
     z-index: 1;
+}
+
+.about-imgs img {
+   display: block;
+   margin: 0 auto;
+   width: 40%;
+   border-radius: 25px;
+   padding: 10px;
+   min-width: 175px;
+}
+
+.studio img {
+   border: solid 3px #bf7379;
+}
+
+.people img {
+    border: solid 3px #80c2ff;
 }
 
 .about-studio {
@@ -278,13 +278,32 @@ navy: #2e294e
 }
 
 .about-people {
-    background-color: rgba(128, 226, 225, 0.5);
+    background-color: rgba(128, 226, 255, 0.5);
 }
 
 .card h1 {
     color: #8F96A0;
     font-family: 'Bubblegum Sans', cursive;
     text-shadow: 0.5px 0.5px #2e294e;
+    margin-top: 15px;
+    white-space: nowrap;
+}
+
+.reverse-img {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+@media screen and (max-width: 768px) {
+    .tpt-icon  {
+    display: none;
+    }
+    .reverse-img {
+        display: block;
+        margin: 0 auto;
+        width: 15%;
+        min-width: 90px;
+    }
 }
 
 /* Contact Page  */
