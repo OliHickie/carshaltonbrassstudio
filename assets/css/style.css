@@ -20,17 +20,20 @@ navy: #2e294e
 
 .pink-text {
     color: #FF9AA2;
-    text-shadow: 0.5px 0.5px #2e294e;
+
 }
 
 .pink-text:hover {
-    color: #ae000e;
-    opacity:0.5;
+    color: #bf7379;
+}
+
+.dark-pink-text {
+    color: #bf7379;
 }
 
 .green-text {
     color: #8DD1BA;
-    text-shadow: 0.5px 0.5px #002e4c;
+
 }
 
 .green-text:hover {
@@ -39,7 +42,7 @@ navy: #2e294e
 
 .blue-text {
     color: #80E2FF;
-    text-shadow: 0.5px 0.5px #2e294e;
+
 }
 
 .blue-text:hover {
@@ -48,7 +51,7 @@ navy: #2e294e
 
 .yellow-text {
     color: #fff900;
-    text-shadow: 0.5px 0.5px #2e294e;
+
 }
 .yellow-text:hover {
     color: #999500;
@@ -57,7 +60,7 @@ navy: #2e294e
 
 .purple-text {
     color: #CE9DD9;
-    text-shadow: 0.5px 0.5px #2e294e;
+
 }
 .purple-text:hover {
     color: #906d97;
@@ -98,6 +101,7 @@ navy: #2e294e
 
 .navbar li a {
     text-decoration: none;
+    text-shadow: 0.5px 0.5px #2e294e;
 }
 
 .navbar button {
@@ -251,9 +255,12 @@ navy: #2e294e
 
 .card {
     border-radius: 25px;
-    padding: 15px;
+    padding: 30px 15px;
     margin: 15px 0px;
     z-index: 1;
+    border: none;
+    max-height: 75%;
+    overflow: hidden;
 }
 
 .about-imgs img {
@@ -277,16 +284,57 @@ navy: #2e294e
     background-color: rgba(255, 154, 162, 0.5);
 }
 
-.about-people {
-    background-color: rgba(128, 226, 255, 0.5);
-}
-
 .card h1 {
     color: #8F96A0;
     font-family: 'Bubblegum Sans', cursive;
     text-shadow: 0.5px 0.5px #2e294e;
     margin-top: 15px;
     white-space: nowrap;
+}
+
+.about-studio p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #62676e;
+    text-align: justify;
+    overflow-y: scroll;
+}
+
+.about-studio a {
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.about-studio a:hover {
+    color: #9e484f;
+}
+
+.about-people {
+    background-color: rgba(128, 226, 255, 0.5);
+}
+
+.about-people p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #62676e;
+    text-align: justify;
+    overflow-y: scroll;
+}
+
+.about-twitter {
+    background-color: rgba(206, 157, 217, 0.5)
+}
+
+.twitter-callout h2 {
+    font-family: 'Bubblegum Sans', cursive;
+    color: #9722F6;
+    font-size: 3em;
+    text-shadow: 2px 2px #fafafa;
+}
+
+.twitter-container {
+    overflow-y: scroll;
+    max-height: 500px;
 }
 
 .reverse-img {
@@ -303,7 +351,7 @@ navy: #2e294e
         margin: 0 auto;
         width: 15%;
         min-width: 90px;
-    }
+        }
 }
 
 /* Contact Page  */
