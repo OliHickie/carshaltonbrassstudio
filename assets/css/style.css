@@ -207,8 +207,7 @@ navy: #2e294e
 
 .footer {
     background-color: #8F96A0;
-    padding: 10px;
-    display: block;
+    padding: 30px;
 }
 
 .social-nav-item {
@@ -249,39 +248,10 @@ navy: #2e294e
 }
 
 /* Index */
-.about-cards {
-    padding: 5px;
-}
 
 .card {
-    border-radius: 25px;
-    padding: 30px 15px;
-    margin: 15px 0px;
-    z-index: 1;
     border: none;
-    max-height: 75%;
-    overflow: hidden;
-}
-
-.about-imgs img {
-   display: block;
-   margin: 0 auto;
-   width: 40%;
-   border-radius: 25px;
-   padding: 10px;
-   min-width: 175px;
-}
-
-.studio img {
-   border: solid 3px #bf7379;
-}
-
-.people img {
-    border: solid 3px #80c2ff;
-}
-
-.about-studio {
-    background-color: rgba(255, 154, 162, 0.5);
+    padding: 30px;
 }
 
 .card h1 {
@@ -292,12 +262,36 @@ navy: #2e294e
     white-space: nowrap;
 }
 
-.about-studio p {
+.card p {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     color: #62676e;
     text-align: justify;
-    overflow-y: scroll;
+    margin: 30px;
+}
+
+.about-imgs img {
+   display: block;
+   margin: 0 auto;
+   width: 30%;
+   border-radius: 25px;
+   padding: 10px;
+   min-width: 150px;
+}
+
+.about-studio img {
+   border: solid 3px #bf7379;
+   margin-top: 30px;
+}
+
+.about-people img {
+    border: solid 3px #80c2ff;
+    margin-top: 30px;
+}
+
+.about-studio {
+    background-color: rgba(255, 154, 162, 0.5); 
+    border-radius: 25px;
 }
 
 .about-studio a {
@@ -311,30 +305,7 @@ navy: #2e294e
 
 .about-people {
     background-color: rgba(128, 226, 255, 0.5);
-}
-
-.about-people p {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    color: #62676e;
-    text-align: justify;
-    overflow-y: scroll;
-}
-
-.about-twitter {
-    background-color: rgba(206, 157, 217, 0.5)
-}
-
-.twitter-callout h2 {
-    font-family: 'Bubblegum Sans', cursive;
-    color: #9722F6;
-    font-size: 3em;
-    text-shadow: 2px 2px #fafafa;
-}
-
-.twitter-container {
-    overflow-y: scroll;
-    max-height: 500px;
+    border-radius: 25px;
 }
 
 .reverse-img {
