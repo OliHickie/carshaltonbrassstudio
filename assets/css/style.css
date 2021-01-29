@@ -251,7 +251,7 @@ navy: #2e294e
 
 .card {
     border: none;
-    padding: 30px;
+    padding: 20px;
 }
 
 .card h1 {
@@ -308,22 +308,62 @@ navy: #2e294e
     border-radius: 25px;
 }
 
-.reverse-img {
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
+.twitter-container {
+    background-color: rgba(144, 109, 151, 0.5);
+    height: 100%;
+    margin: 20px 150px;
+    border-radius: 25px;
+}
+
+.twitter-callout {
+    padding: 45px;
+}
+
+.twitter-container h1 {
+    text-align: right;
+    margin-left: auto;
+    width: 66%;
+    color: #8F96A0;
+    font-family: 'Bubblegum Sans', cursive;
+    text-shadow: 0.5px 0.5px #2e294e;
+}
+
+.twitter-container img {
+    width: 33%;
+    min-width: 200px;
+    display: block;
+    margin-left: auto;
+}
+
+.twitter-feed {
+    padding: 45px;
 }
 
 @media screen and (max-width: 768px) {
-    .tpt-icon  {
-    display: none;
-    }
-    .reverse-img {
-        display: block;
-        margin: 0 auto;
-        width: 15%;
-        min-width: 90px;
-        }
+    .twitter-container {
+    margin: 20px;
+    border-radius: 25px;
 }
+    .twitter-callout {
+    padding: 5px;
+}
+    .twitter-container img {
+    width: 50%;
+    min-width: 250px;
+    display: block;
+    margin: 0 auto;
+}
+    .twitter-container h1 {
+    text-align: center;
+    margin: 20px auto;
+}
+    .twitter-feed {
+    /* padding: 15px;
+    display: flex;
+    justify-content: center; */
+}
+}
+
 
 /* Contact Page  */
 
