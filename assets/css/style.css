@@ -179,7 +179,7 @@ navy: #2e294e
         padding: 30px;
     }
     .callout {
-        font-size: 3em;
+        font-size: 3rem;
         margin: 0;
     }
     .subheading {
@@ -330,7 +330,7 @@ navy: #2e294e
     text-shadow: 0.5px 0.5px #2e294e;
 }
 
-.twitter-container img {
+.trumpet-img {
     width: 33%;
     min-width: 150px;
     display: block;
@@ -339,6 +339,19 @@ navy: #2e294e
 
 .twitter-feed {
     padding: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.qb-img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.qb-img {
+    width: 75%;
 }
 
 @media screen and (max-width: 768px) {
@@ -349,7 +362,7 @@ navy: #2e294e
     .twitter-callout {
     padding: 5px;
 }
-    .twitter-container img {
+    .trumpet-img {
     /* width: 50%; */
     /* min-width: 250px; */
     display: block;
