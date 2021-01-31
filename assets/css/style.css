@@ -394,20 +394,29 @@ navy: #2e294e
     cursor: pointer;
     float: right;
     padding: 5px 10px;
-    white-space: nowrap;
-}
-
-.twitter-button:active {
-    color: #8DD1BA;
-    background-color: #2b6d57;
-}
-
-.twitter-button p {
+    /* white-space: nowrap; */
     font-family: 'Bubblegum Sans', cursive;
     margin-top: auto;
     margin-bottom: auto;
     font-size: 150%;
 }
+
+.twitter-button:focus {
+    outline:0;
+}
+
+.twitter-button:active {
+    color: #8DD1BA;
+    background-color: #2b6d57;
+    outline: none;
+    border: none;
+}
+
+#myDIV {
+    display: none;
+}
+
+
 
 @media screen and (max-width: 600px) {
     .twitter-container {
@@ -418,17 +427,12 @@ navy: #2e294e
     }
 
     .twitter-button {
-    float: center;
     padding: 5px 3px;
-}
-
-.twitter-button p {
     font-family: 'Bubblegum Sans', cursive;
     margin-top: auto;
     margin-bottom: auto;
     font-size: 90%;
-
-}
+    }
 }
 
 
