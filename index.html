@@ -13,7 +13,6 @@
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/8b879e8b27.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css" />
-    <script type="text/javascript" src="assets/js/script.js"></script>
 </head>
 
 <body class="d-flex flex-column h-100">
@@ -107,10 +106,11 @@
     </div>
     <div class="twitter-container">
         <div class="twitter-btn-container">
-            <button class="twitter-button" onclick="myFunction()">Click here for latest news and events!</button>
+            <button class="twitter-button" onclick="twitterFunction()">Click here for latest news and events!</button>
         </div>            
-        <div class="twitter-feed" id="myDIV">
-            <a class="twitter-timeline" data-lang="en" data-width="400" data-height="600"
+        <!-- bug - button would work 2nd time until inline style -->
+        <div id="twitter-feed" style="display: none;">
+            <a class="twitter-timeline" data-lang="en" data-width="400" data-height="500"
                 href="https://twitter.com/BrassStudio?ref_src=twsrc%5Etfw">Tweets by BrassStudio</a>
             <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
@@ -165,7 +165,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
         </script>
-        <!-- <link rel="stylesheet" href="assets/js/script.js" /> -->
+        <script type="text/javascript" src="assets/js/script.js"></script>
 </body>
 
 </html>

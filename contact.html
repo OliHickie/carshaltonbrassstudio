@@ -51,6 +51,17 @@
             </div>
         </div>
     </div>
+        <div class="twitter-container">
+        <div class="twitter-btn-container">
+            <button class="twitter-button" onclick="twitterFunction()">Click here for latest news and events!</button>
+        </div>            
+        <!-- bug - button would work 2nd time until inline style -->
+        <div id="twitter-feed" style="display: none;">
+            <a class="twitter-timeline" data-lang="en" data-width="400" data-height="500"
+                href="https://twitter.com/BrassStudio?ref_src=twsrc%5Etfw">Tweets by BrassStudio</a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+    </div>
     <!-- Footer -->
     <footer class="footer mt-auto">
         <div class="row container-fluid">

@@ -243,7 +243,7 @@ navy: #2e294e
 
 @media screen and (max-width: 768px) {
     .social-icons-list {
-        width: 70%;
+        width: 80%;
         font-size: 150%;
     }
 }
@@ -309,79 +309,11 @@ navy: #2e294e
     border-radius: 25px;
 }
 
-/* .twitter-container {
-    background-color: rgba(144, 109, 151, 0.5);
-    margin: 20px 150px;
-    border-radius: 25px;
-}
-
-.twitter-callout {
-    padding: 45px;
-}
-
-.twitter-container h1 {
-    text-align: center;
-    margin-left: auto;
-    width: 66%;
-    color: #8F96A0;
-    font-family: 'Bubblegum Sans', cursive;
-    text-shadow: 0.5px 0.5px #2e294e;
-}
-
-.trumpet-img {
-    width: 33%;
-    min-width: 150px;
-    display: block;
-    margin-left: 50%;
-}
-
-.twitter-feed {
-    padding: 45px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.qb-img-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.qb-img {
-    width: 75%;
-} */
-
-/* @media screen and (max-width: 768px) {
-    .twitter-container {
-    margin: 20px;
-    border-radius: 25px;
-}
-    .twitter-callout {
-    padding: 5px;
-}
-    .trumpet-img {
-    width: 50%;
-    min-width: 250px;
-    display: block;
-    margin: 0 auto;
-}
-    .twitter-container h1 {
-    text-align: center;
-    margin: 20px auto;
-}
-    .twitter-feed {
-    padding: 15px;
-    display: flex;
-    justify-content: center;
-}
-} */
-
 /* Absolute twitter container  */
 
 .twitter-container {
     position: fixed;
-    top: 90px;
+    top: 95px;
     right: 15px;
     max-width: 33%;
 }
@@ -394,10 +326,8 @@ navy: #2e294e
     cursor: pointer;
     float: right;
     padding: 5px 10px;
-    /* white-space: nowrap; */
+    white-space: nowrap;
     font-family: 'Bubblegum Sans', cursive;
-    margin-top: auto;
-    margin-bottom: auto;
     font-size: 150%;
 }
 
@@ -412,11 +342,9 @@ navy: #2e294e
     border: none;
 }
 
-#myDIV {
-    display: none;
+#twitter-feed {
+    max-height: 75vh;
 }
-
-
 
 @media screen and (max-width: 600px) {
     .twitter-container {
@@ -427,16 +355,22 @@ navy: #2e294e
     }
 
     .twitter-button {
-    padding: 5px 3px;
+    padding: 5px 8px;
     font-family: 'Bubblegum Sans', cursive;
     margin-top: auto;
     margin-bottom: auto;
-    font-size: 90%;
+    font-size: 100%;
     }
 }
-
-
-
+@media screen and (max-width: 330px) {
+     .twitter-container {
+    right: 3px;
+    max-width: 60%;
+    }
+    .twitter-button {
+    font-size: 70%;
+    }
+}
 
 /* Contact Page  */
 
@@ -459,15 +393,16 @@ navy: #2e294e
     font-size: 20px;
     text-decoration: none;
     letter-spacing: 0.2px;
-    color: #dddddd;
-    background-color: rgba(128, 226, 225, 0.5);
+    color: #fafafa;
+    /* background-color: rgba(128, 226, 225, 0.5); */
+    background-color: #8DD1BA;
     border-radius: 25px;
     padding-right: 15px;
     white-space: nowrap;
 }
 
 .jumbotron-contact a:hover {
-    color: #8f9aad;
+    color: #2b6d57;
 }
 
 
