@@ -346,6 +346,10 @@ navy: #2e294e
     max-height: 75vh;
 }
 
+/* .fa-chevron-circle-down {
+    color: 
+} */
+
 @media screen and (max-width: 600px) {
     .twitter-container {
     position: fixed;
