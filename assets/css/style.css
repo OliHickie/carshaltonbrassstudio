@@ -20,7 +20,6 @@ navy: #2e294e
 
 .pink-text {
     color: #FF9AA2;
-
 }
 
 .pink-text:hover {
@@ -33,7 +32,6 @@ navy: #2e294e
 
 .green-text {
     color: #8DD1BA;
-
 }
 
 .green-text:hover {
@@ -56,7 +54,6 @@ navy: #2e294e
 .yellow-text:hover {
     color: #999500;
 }
-
 
 .purple-text {
     color: #CE9DD9;
@@ -422,5 +419,62 @@ navy: #2e294e
 
 .contact-info {
     padding: 30px 0px;
+}
+
+/* Play  */
+
+.bbp-poster-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.bbp-poster-container img {
+    width: 25%;
+    border-radius: 25px;
+    min-width: 300px;
+    position: relative;
+}
+
+.bbp-poster-container a {
+    position: absolute;
+    margin-top: 10%;
+}
+
+.signup-btn {
+    font-family: 'Bubblegum Sans', cursive;
+    font-size: 125%;
+    color: #2b6d57;
+    background-color: #8DD1BA;
+    padding: 5px 20px;
+    text-decoration: none;
+    border-radius: 100px;
+    cursor: pointer;
+    box-shadow: 0 2px 25px #fafafa;
+    transition: all 0.3s;
+}
+
+.signup-btn:hover {
+    color: #8DD1BA;
+    background-color: #2b6d57;
+}
+
+.signup-btn:active {
+    padding: 1px 15px;
+}
+
+@media screen and (max-width: 768px) {
+     .bbp-poster-container a {
+    position: absolute;
+    margin-top: 120px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .bbp-poster-container img {
+    min-width: 260px;
+    }
+   
 }
 
