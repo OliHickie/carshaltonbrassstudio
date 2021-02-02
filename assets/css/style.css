@@ -126,8 +126,8 @@ navy: #2e294e
     justify-content: center;
 }
 
-.vh-90 {
-    min-height: 90vh;
+.vh-85 {
+    min-height: 85vh;
 }
 
 .hero-heading-container {
@@ -265,9 +265,8 @@ navy: #2e294e
 
 .card p {
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
     color: #62676e;
-    text-align: justify;
+    text-align: left;
     margin: 30px;
 }
 
@@ -309,6 +308,12 @@ navy: #2e294e
     border-radius: 25px;
 }
 
+@media screen and (max-width: 600px) {
+    .card p {
+    margin: 30px 20px;
+    }
+}
+
 /* Absolute twitter container  */
 
 .twitter-container {
@@ -340,10 +345,6 @@ navy: #2e294e
     background-color: #2b6d57;
     outline: none;
     border: none;
-}
-
-#twitter-feed {
-    max-height: 75vh;
 }
 
 /* .fa-chevron-circle-down {
