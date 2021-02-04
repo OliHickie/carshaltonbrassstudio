@@ -67,7 +67,7 @@ navy: #2e294e
 /* Nav bar */
 
 .logo {
-    max-width: 10%;
+    max-width: 13%;
     height: auto;
     min-width: 100px;
     margin-left: 20px;
@@ -150,8 +150,10 @@ navy: #2e294e
 
 .cta-enquire {
     font-size: 2em;
-    color: #2b6d57;
-    background-color: #8DD1BA;
+    /* color: #2b6d57; */
+    color: #8F96A0;
+    /* background-color: #8DD1BA; */
+    background-color: #fff900;
     padding: 5px 20px;
     text-decoration: none;
     border-radius: 100px;
@@ -161,8 +163,9 @@ navy: #2e294e
 }
 
 .cta-enquire:hover {
-    color: #8DD1BA;
-    background-color: #2b6d57;
+    color: #fafafa;
+    /* background-color: #2b6d57; */
+    box-shadow: 0 10px 100px #fafafa;
 }
 
 .cta-enquire:active {
@@ -181,7 +184,7 @@ navy: #2e294e
     }
     .subheading {
         word-spacing: 1em;
-        color: #fafafa;
+        color: #cccccc;
         margin-top: 25px;
         margin-bottom: 25px;
     }
@@ -320,8 +323,10 @@ navy: #2e294e
 }
 
 .twitter-button {
-    color: #2b6d57;
-    background-color: #8DD1BA;
+    /* color: #2b6d57; */
+    color: #624c66;
+    /* background-color: #8DD1BA; */
+    background-color: #CE9DD9;
     border: none;
     border-radius: 100px;
     cursor: pointer;
@@ -466,8 +471,6 @@ navy: #2e294e
 @media screen and (max-width: 768px) {
      .bbp-poster-container a {
     position: absolute;
-    
-
     }
 }
 
