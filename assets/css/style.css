@@ -150,10 +150,8 @@ navy: #2e294e
 
 .cta-enquire {
     font-size: 2em;
-    /* color: #2b6d57; */
-    color: #8F96A0;
-    /* background-color: #8DD1BA; */
-    background-color: #fff900;
+    color: #2b6d57;
+    background-color: #8DD1BA;
     padding: 5px 20px;
     text-decoration: none;
     border-radius: 100px;
@@ -163,9 +161,9 @@ navy: #2e294e
 }
 
 .cta-enquire:hover {
-    color: #fafafa;
+    color: #cccccc;
     /* background-color: #2b6d57; */
-    box-shadow: 0 10px 100px #fafafa;
+    box-shadow: 0 10px 50px #fafafa;
 }
 
 .cta-enquire:active {
@@ -323,10 +321,8 @@ navy: #2e294e
 }
 
 .twitter-button {
-    /* color: #2b6d57; */
-    color: #624c66;
-    /* background-color: #8DD1BA; */
-    background-color: #CE9DD9;
+    color: #2b6d57;
+    background-color: #8DD1BA;
     border: none;
     border-radius: 100px;
     cursor: pointer;
