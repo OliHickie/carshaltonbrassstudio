@@ -161,9 +161,9 @@ navy: #2e294e
 }
 
 .cta-enquire:hover {
-    color: #cccccc;
-    /* background-color: #2b6d57; */
-    box-shadow: 0 10px 50px #fafafa;
+    color: #8DD1BA;
+    background-color: #2b6d57;
+    box-shadow: 0 0px 50px #fafafa;
 }
 
 .cta-enquire:active {
@@ -344,9 +344,6 @@ navy: #2e294e
     border: none;
 }
 
-/* .fa-chevron-circle-down {
-    color: 
-} */
 
 @media screen and (max-width: 600px) {
     .twitter-container {
@@ -396,7 +393,6 @@ navy: #2e294e
     text-decoration: none;
     letter-spacing: 0.2px;
     color: #fafafa;
-    /* background-color: rgba(128, 226, 225, 0.5); */
     background-color: #8DD1BA;
     border-radius: 25px;
     padding-right: 15px;
@@ -423,23 +419,19 @@ navy: #2e294e
 
 /* Play  */
 
-.bbp-poster-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 1%;
-}
-
-.bbp-poster-container img {
-    width: 25%;
+.bbq-bg-poster {
+    background-image: url(../images/bbp-poster.jpg);
+    height: 495px; 
+    width: 330px;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover; 
     border-radius: 25px;
-    min-width: 300px;
-    position: relative;
 }
 
-.bbp-poster-container a {
-    position: absolute;
-    margin-top: 10%;
+.bbq-btn-container {
+    height: 100%;
+    padding-top: 90%;
 }
 
 .signup-btn {
@@ -453,26 +445,34 @@ navy: #2e294e
     cursor: pointer;
     box-shadow: 0 2px 25px #fafafa;
     transition: all 0.3s;
+    display: block;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .signup-btn:hover {
     color: #8DD1BA;
     background-color: #2b6d57;
+    box-shadow: 0 0px 50px #fafafa;
 }
 
 .signup-btn:active {
     padding: 1px 15px;
 }
 
-@media screen and (max-width: 768px) {
-     .bbp-poster-container a {
-    position: absolute;
+
+
+@media screen and (max-width: 1024px) {
+    .bbq-bg-poster {
+    height: 405px; 
+    width: 270px;
     }
 }
 
 @media screen and (max-width: 320px) {
-    .bbp-poster-container img {
-    min-width: 260px;
+    .bbq-bg-poster {
+    height: 300px; 
+    width: 200px;
     }
 }
-
