@@ -7,10 +7,3 @@ function twitterFunction() {
     }
 }
 
-function openForm() {
-    document.getElementById("form-display").style.display = "block";
-}
-
-function closeForm() {
-    document.getElementById("form-display").style.display = "none";
-}

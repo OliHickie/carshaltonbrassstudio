@@ -13,7 +13,13 @@
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/8b879e8b27.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/js/script.js" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_5w7OxneLUZpB3gXz7PHmh");
+        })();
+    </script>
 </head>
 
 <body class="d-flex flex-column h-100">
@@ -39,45 +45,24 @@
         </div>
     </header>
     <div class="form-container" id="form-display">
-        <form>
+        <form onsubmit="return sendMail(this);">
             <p class="signup-header">Sign up for the next play along...</p>
-            <div class="form-group">
-                <small>*All fields required</small>
-                <label class="sr-only" for="signUpParentName">Parent/Guardian Name</label>
-                <input type="text" class="form-control" id="signUpParentName" aria-describedby="parentName"
-                    placeholder="Name of Parent/Guardian" required>
-            </div>
-            <div class="form-group">
-                <label class="sr-only" for="signUpStudentName">Student Name</label>
-                <input type="text" class="form-control" id="signUpStudentName" aria-describedby="studentName"
-                    placeholder="Name of Student" required>
-            </div>
-            <div class="form-group">
-                <label class="sr-only" for="ssignUpEmail">Email</label>
-                <input type="email" class="form-control" id="signUpEmail" aria-describedby="emailAddress"
-                    placeholder="Parent Email Address" required>
-            </div>
-            <div class="form-group">
-                <label class="sr-only" for="signUpInstrument">Instrument</label>
-                <input type="text" class="form-control" id="signUpInstrument" aria-describedby="Instrument"
-                    placeholder="Instrument" required>
-            </div>
-            <div class="form-group">
-                <label class="sr-only" for="signUpGrade">Grade</label>
-                <select class="custom-select" id="signUpGrade">
-                    <option selected>Grade</option>
-                    <option value="pre-1">Beginner</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                    <option value="4">Four</option>
-                    <option value="5">Five+</option>
-                </select>
-            </div>
-            <div class="form-btns text-center">
-                <button type="submit" class="btn submit-btn" onclick="closeForm()">Submit</button>
-                <button class="btn cancel-btn" onclick="closeForm()">Cancel</button>
-            </div>
+            <label class="sr-only" for="signUpParentName">Parent/Guardian Name</label>
+            <input type="text" name="parentName" class="form-control" id="signUpParentName"
+                aria-describedby="parentName" placeholder="Name of Parent/Guardian" required>
+            <label class="sr-only" for="signUpStudentName">Student Name</label>
+            <input type="text" name="studentName" class="form-control" id="signUpStudentName"
+                aria-describedby="studentName" placeholder="Name of Student" required>
+            <label class="sr-only" for="signUpEmail">Email</label>
+            <input type="email" name="parentEmail" class="form-control" id="signUpEmail"
+                aria-describedby="emailAddress" placeholder="Parent Email Address" required>
+            <label class="sr-only" for="signUpInstrument">Instrument</label>
+            <input type="text" name="instrument" class="form-control" id="signUpInstrument"
+                aria-describedby="Instrument" placeholder="Instrument" required>
+            <label class="sr-only" for="signUpGrade">Grade</label>
+            <input type="text" name="grade" class="form-control" id="signUpGrade" aria-describedby="grade" placeholder="Grade" required>
+            <button type="submit" class="btn submit-btn">Submit</button>
+            <button class="btn cancel-btn" onclick="closeForm()">Cancel</button>
         </form>
     </div>
     <!-- <section> -->
@@ -201,6 +186,7 @@
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
         </script>
     <script type="text/javascript" src="assets/js/script.js"></script>
+    <script src="assets/js/signup-form.js"></script>
 </body>
 
 </html>
