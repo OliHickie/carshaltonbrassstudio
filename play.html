@@ -45,7 +45,7 @@
         </div>
     </header>
     <div class="form-container" id="form-display">
-        <form onsubmit="return sendMail(this);">
+        <form onsubmit="return sendMail(this); closeForm();">
             <p class="signup-header">Sign up for the next play along...</p>
             <label class="sr-only" for="signUpParentName">Parent/Guardian Name</label>
             <input type="text" name="parentName" class="form-control" id="signUpParentName"

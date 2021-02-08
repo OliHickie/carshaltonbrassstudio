@@ -491,7 +491,7 @@ navy: #2e294e
     left: 30%;
     background-color: #80c2ff;
     z-index: 2;
-    /* display: none; */
+    display: none;
     border-radius: 25px;
     padding: 30px;
 }
