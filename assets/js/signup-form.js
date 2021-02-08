@@ -23,7 +23,6 @@ function sendMail(contactForm){
         },
         alert("Thank you for applying, we will be in touch shortly!"),
         closeForm()
-
         );
         
         return false;

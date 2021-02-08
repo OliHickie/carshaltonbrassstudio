@@ -460,11 +460,14 @@ navy: #2e294e
     box-shadow: 0 0px 50px #fafafa;
 }
 
-/* .signup-btn:active { */
-    /* padding: 1px 15px; */
-    /* border: none; */
-    /* outline: none; */
-/* } */
+.signup-btn:focus {
+    outline: none;
+}
+
+.signup-btn:active {
+    border: none;
+    outline: none;
+}
 
 
 
@@ -514,7 +517,6 @@ navy: #2e294e
 .form-container button {
     font-family: 'Bubblegum Sans', cursive;
     font-size: 150%;
-    margin: 0px 15px;
     padding: 2px 10px;
     text-decoration: none;
     border-radius: 100px;
@@ -525,6 +527,8 @@ navy: #2e294e
 .submit-btn {
     color: #2b6d57;
     background-color: #8DD1BA;
+    display: block;
+    margin: 15px auto;
 }
 
 .form-container button:hover {
@@ -535,6 +539,8 @@ navy: #2e294e
 .cancel-btn {
     color: #464b53;
     background-color: #8f9aad;
+    display: block;
+    margin: 0 auto;
 }
 
 @media screen and (max-width: 600px) {
