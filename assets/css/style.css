@@ -497,15 +497,17 @@ navy: #2e294e
 
 .signup-header {
     font-family: 'Bubblegum Sans', cursive;
-    color: #8f9aad;
+    color: #62676e;
     font-size: 150%;
-    padding: 15px 30px 0px 30px;
-    margin: 0;
+    padding: 15px;
+    margin: 5px 10px 0px 10px;
 }
 
 .form-group {
     width: 75%;
-    margin: 0 auto;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .form-btns {
@@ -514,7 +516,30 @@ navy: #2e294e
 }
 
 .form-container button {
+    font-family: 'Bubblegum Sans', cursive;
+    font-size: 150%;
     margin: 0px 15px;
+    padding: 2px 10px;
+    text-decoration: none;
+    border-radius: 100px;
+    cursor: pointer;
+    /* box-shadow: 0 2px 25px #fafafa; */
+    transition: all 0.3s;
+}
+
+.submit-btn {
+    color: #2b6d57;
+    background-color: #8DD1BA;
+}
+
+.form-container button:hover {
+    color: #8DD1BA;
+    background-color: #2b6d57;
+}
+
+.cancel-btn {
+    color: #464b53;
+    background-color: #8f9aad;
 }
 
 @media screen and (max-width: 600px) {

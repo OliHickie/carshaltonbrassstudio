@@ -42,36 +42,41 @@
         <form>
             <p class="signup-header">Sign up for the next play along...</p>
             <div class="form-group">
-                <label for="signUpParentName"></label>
+                <small>*All fields required</small>
+                <label class="sr-only" for="signUpParentName">Parent/Guardian Name</label>
                 <input type="text" class="form-control" id="signUpParentName" aria-describedby="parentName"
-                    placeholder="Name of Parent*" required>
+                    placeholder="Name of Parent/Guardian" required>
             </div>
             <div class="form-group">
-                <label for="signUpStudentName"></label>
+                <label class="sr-only" for="signUpStudentName">Student Name</label>
                 <input type="text" class="form-control" id="signUpStudentName" aria-describedby="studentName"
-                    placeholder="Name of Student*" required>
+                    placeholder="Name of Student" required>
             </div>
             <div class="form-group">
-                <label for="signUpEmail"></label>
+                <label class="sr-only" for="ssignUpEmail">Email</label>
                 <input type="email" class="form-control" id="signUpEmail" aria-describedby="emailAddress"
-                    placeholder="Parent Email Address*" required>
+                    placeholder="Parent Email Address" required>
             </div>
-            <div class="form-group instrument-grade">
-                    <label for="signUpInstrument"></label>
-                    <input type="text" class="form-control" id="signUpInstrument" aria-describedby="Instrument"
-                        placeholder="Instrument" required>
-                    <label for="signUpGrade">Grade</label>
-                    <select multiple class="form-control" id="signUpGrade">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                    </select>
+            <div class="form-group">
+                <label class="sr-only" for="signUpInstrument">Instrument</label>
+                <input type="text" class="form-control" id="signUpInstrument" aria-describedby="Instrument"
+                    placeholder="Instrument" required>
+            </div>
+            <div class="form-group">
+                <label class="sr-only" for="signUpGrade">Grade</label>
+                <select class="custom-select" id="signUpGrade">
+                    <option selected>Grade</option>
+                    <option value="pre-1">Beginner</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                    <option value="4">Four</option>
+                    <option value="5">Five+</option>
+                </select>
             </div>
             <div class="form-btns text-center">
-                <button type="submit" class="btn btn-primary">Submit</button>
-                <button class="btn btn-secondary" onclick="closeForm()">Cancel</button>
+                <button type="submit" class="btn submit-btn" onclick="closeForm()">Submit</button>
+                <button class="btn cancel-btn" onclick="closeForm()">Cancel</button>
             </div>
         </form>
     </div>
@@ -79,13 +84,8 @@
     <div class="bg-img">
         <div class="row">
             <div class="col-12">
-                <!-- <div class="bbp-poster-container">
-                    <img src="assets/images/bbp-poster.jpg" alt="Brass Play Along poster">
-                    <a href="mailto:carshaltonbrassstudio@gmail.com" class="signup-btn">Sign Up!</a>
-                </div> -->
                 <div class="bbq-bg-poster text-center">
                     <div class="bbq-btn-container">
-                        <!-- <a href="mailto:carshaltonbrassstudio@gmail.com" class="signup-btn">Sign Up!</a> -->
                         <button class="signup-btn" onclick="openForm()">Sign Up!</button>
                     </div>
                 </div>
