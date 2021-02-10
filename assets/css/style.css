@@ -12,8 +12,8 @@ navy: #2e294e
 }
 
 .row {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
 }
 
 /* text colors  */
@@ -428,6 +428,7 @@ navy: #2e294e
     background-size: cover; 
     border-radius: 25px;
     margin-top: 60px;
+    margin-bottom: 30px;
 }
 
 .bbq-btn-container {
@@ -440,7 +441,7 @@ navy: #2e294e
     font-size: 125%;
     color: #2b6d57;
     background-color: #8DD1BA;
-    padding: 5px 20px;
+    padding: 5px 10px;
     text-decoration: none;
     border-radius: 100px;
     cursor: pointer;
@@ -448,6 +449,7 @@ navy: #2e294e
     transition: all 0.3s;
     display: block;
     width: 40%;
+    min-width: 100px;
     margin-left: auto;
     margin-right: auto;
     border: none;
@@ -468,8 +470,6 @@ navy: #2e294e
     border: none;
     outline: none;
 }
-
-
 
 @media screen and (max-width: 1024px) {
     .bbq-bg-poster {
@@ -497,6 +497,9 @@ navy: #2e294e
     display: none;
     border-radius: 25px;
     padding: 30px;
+    -webkit-box-shadow: 5px 5px 5px 1px rgba(93, 141, 186, 0.8);
+    -moz-box-shadow:    5px 5px 5px 1px rgba(93, 141, 186, 0.8);
+    box-shadow:         5px 5px 5px 1px rgba(93, 141, 186, 0.8);
 }
 
 .signup-header {
@@ -512,6 +515,7 @@ navy: #2e294e
     width: 75%;
     margin-left: auto;
     margin-right: auto;
+    
 }
 
 .form-container button {
@@ -548,4 +552,77 @@ navy: #2e294e
     width: 90%;
     left: 5%;
 }
+}
+
+/* Photo Banner */
+
+.img-banner {
+    background-color: #4f89ec;
+    padding: 10px 0px;
+}
+
+/* code taken from https://codepen.io/tylerkempt/pen/vKKYzP */
+
+.container {
+    width: 100%;
+    overflow: hidden;
+    margin: 10px auto;
+    background: none;
+}
+
+.photobanner {
+    height: 233px;
+    width: 3500px;
+}
+
+.photobanner img {
+	margin-right: 15px;
+	height: 233px;
+    width: 233px;
+    border-radius: 25px;
+}
+
+/*keyframe animations*/
+.first {
+    -webkit-animation: bannermove 45s linear infinite;
+       -moz-animation: bannermove 45s linear infinite;
+        -ms-animation: bannermove 45s linear infinite;
+         -o-animation: bannermove 45s linear infinite;
+            animation: bannermove 45s linear infinite;
+}
+ 
+@keyframes bannermove {
+ 0% {margin-left: 25px;}
+ 100% {margin-left: -2130px;}
+}
+ 
+@-moz-keyframes bannermove {
+ 0% {margin-left: 25px;}
+ 100% {margin-left: -2130px;}
+}
+ 
+@-webkit-keyframes bannermove {
+ 0% {margin-left: 25px;}
+ 100% {margin-left: -2130px;}
+}
+ 
+@-ms-keyframes bannermove {
+ 0% {margin-left: 25px;}
+ 100% {margin-left: -2130px;}
+}
+ 
+@-o-keyframes bannermove {
+ 0% {margin-left: 25px;}
+ 100% {margin-left: -2130px;}
+}
+
+@media screen and (max-width: 768px) {
+    .photobanner img {
+	margin-right: 5px;
+	height: 150px;
+    width: 150px;
+    }
+    .photobanner {
+    height: 150px;
+    }
 }
