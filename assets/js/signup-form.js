@@ -8,9 +8,8 @@ function closeForm() {
 
 function sendMail(contactForm){
     emailjs.send("service_z6cxmcd", "template_kz2p2kk", {
-        "parent_name": contactForm.parentName.value,
-        "student_name": contactForm.studentName.value,
-        "parent_email": contactForm.parentEmail.value,
+        "parent_name": contactForm.name.value,
+        "parent_email": contactForm.email.value,
         "instrument": contactForm.instrument.value,
         "grade": contactForm.grade.value
     })

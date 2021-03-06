@@ -116,7 +116,7 @@ navy: #2e294e
 .bg-img {
     background: url(../images/hero-img.png) no-repeat scroll top center;
     background-size: cover;
-    min-height: 75vh; 
+    min-height: 85vh; 
     margin-top: 50px;
     display: flex;
     align-items: center;
@@ -486,13 +486,21 @@ navy: #2e294e
 }
 
 /* form  */
+.fa-times-circle {
+    color: red;
+    font-size: x-large;
+    position: absolute;
+    right: 0;
+    margin-right: 30px;
+    cursor: pointer;
+}
 
 .form-container {
     width: 40%;
     position: fixed;
     top: 100px;
     left: 30%;
-    background-color: #80c2ff;
+    background: radial-gradient(circle, rgba(249,249,249,1) 0%, rgba(79,137,236,1) 100%);
     z-index: 2;
     display: none;
     border-radius: 25px;
@@ -545,6 +553,22 @@ navy: #2e294e
     background-color: #8f9aad;
     display: block;
     margin: 0 auto;
+}
+
+.find-out-more {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    margin: 90px auto;
+    font-size: 3em;
+    color: blue;
+    font-family: 'Bubblegum Sans', cursive;
+}
+
+.find-out-more h2 {
+    font-size: 1em;
+    background: rgba(249, 249, 249, 0.8);
+    padding: 5px;
 }
 
 @media screen and (max-width: 600px) {
