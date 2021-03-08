@@ -6,6 +6,10 @@ grey: #8f9aad
 navy: #2e294e
 */
 
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 .col {
     margin: 0;
     padding: 0;
@@ -116,7 +120,6 @@ navy: #2e294e
 .bg-img {
     background: url(../images/hero-img.png) no-repeat scroll top center;
     background-size: cover;
-    min-height: 85vh; 
     margin-top: 50px;
     display: flex;
     align-items: center;
@@ -132,7 +135,8 @@ navy: #2e294e
     background-color: rgba(80, 91, 106, 0.7);
     border-radius: 25px;
     padding: 45px;
-    margin-top: 25px;
+    margin-top: 175px;
+    margin-bottom: 150px;
 }
 
 .callout {
@@ -418,70 +422,132 @@ navy: #2e294e
 }
 
 /* Play  */
-
-.bbq-bg-poster {
-    background-image: url(../images/bbp-poster.jpg);
-    height: 495px; 
-    width: 330px;
-    background-position: center;
-    background-repeat: no-repeat; 
-    background-size: cover; 
-    border-radius: 25px;
-    margin-top: 60px;
-    margin-bottom: 30px;
-}
-
-.bbq-btn-container {
-    height: 100%;
-    padding-top: 90%;
-}
-
-.signup-btn {
+.hero-heading-container {
     font-family: 'Bubblegum Sans', cursive;
-    font-size: 125%;
+    background-color: rgba(80, 91, 106, 0.7);
+    border-radius: 25px;
+    padding: 45px;
+    margin-top: 175px;
+    margin-bottom: 150px;
+}
+
+.callout {
+    color: #8DD1BA;
+    font-size: 4em;
+    text-shadow: 2px 2px #2e294e;
+}
+
+.subheading {
+    word-spacing: 1em;
+    color: #eeeeee;
+    margin-top: 37px;
+    margin-bottom: 45px;
+}
+
+.cta-enquire {
+    font-size: 2em;
     color: #2b6d57;
     background-color: #8DD1BA;
-    padding: 5px 10px;
+    padding: 5px 20px;
     text-decoration: none;
     border-radius: 100px;
     cursor: pointer;
     box-shadow: 0 2px 25px #fafafa;
     transition: all 0.3s;
-    display: block;
-    width: 40%;
-    min-width: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    border: none;
-    outline: none;
 }
 
-.signup-btn:hover {
+.cta-enquire:hover {
     color: #8DD1BA;
     background-color: #2b6d57;
     box-shadow: 0 0px 50px #fafafa;
 }
 
-.signup-btn:focus {
-    outline: none;
+.cta-enquire:active {
+    padding: 1px 15px;
 }
 
-.signup-btn:active {
-    border: none;
-    outline: none;
-}
-
-@media screen and (max-width: 1024px) {
-    .bbq-bg-poster {
-    height: 405px; 
-    width: 270px;
+@media screen and (max-width: 960px) {
+    .hero-heading-container {
+        margin-left: 5%;
+        margin-right: 5%;
+        padding: 30px;
+    }
+    .callout {
+        font-size: 3rem;
+        margin: 0;
+    }
+    .subheading {
+        word-spacing: 1em;
+        color: #cccccc;
+        margin-top: 25px;
+        margin-bottom: 25px;
     }
 }
 
-@media screen and (max-width: 320px) {
-    .bbq-bg-poster {
-    height: 300px; 
-    width: 200px;
+@media screen and (max-width: 350px) {
+    .hero-heading-container {
+        margin-left: 2%;
+        margin-right: 2%;
+        padding: 15px;
+    }
+    .callout {
+        color: #8DD1BA;
+        font-size: 3em;
+        text-shadow: 5px 5px #000000;
+    }
+}
+
+.play-header {
+    font-family: 'Bubblegum Sans', cursive;
+    background-color: rgba(80, 91, 106, 0.7);
+    border-radius: 25px;
+    padding: 45px;
+    margin-top: 175px;
+    margin-bottom: 150px;
+    max-width: 50%;
+}
+
+.play-header h1 {
+    color: #8DD1BA;
+    font-size: 4em;
+    text-shadow: 2px 2px #2e294e;
+}
+
+.play-header h2 {
+    color: #eeeeee;
+    margin-top: 37px;
+    margin-bottom: 45px;
+    width: 66%;
+    letter-spacing: 0.5px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 960px) {
+    .play-header {
+        padding: 30px;
+        max-width: 90%;
+    }
+    .play-header h1 {
+        font-size: 3rem;
+        margin: 0;
+    }
+    .play-header h2 {
+        margin-top: 25px;
+        margin-bottom: 25px;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .play-header {
+        margin-left: 2%;
+        margin-right: 2%;
+        padding: 15px;
+    }
+    .play-header h1 {
+        color: #8DD1BA;
+        font-size: 3em;
+        text-shadow: 5px 5px #000000;
     }
 }
 
@@ -556,10 +622,6 @@ navy: #2e294e
 }
 
 .find-out-more {
-    position: absolute;
-    bottom: 0;
-    display: block;
-    margin: 90px auto;
     font-size: 3em;
     color: blue;
     font-family: 'Bubblegum Sans', cursive;
@@ -567,7 +629,6 @@ navy: #2e294e
 
 .find-out-more h2 {
     font-size: 1em;
-    background: rgba(249, 249, 249, 0.8);
     padding: 5px;
 }
 
@@ -578,76 +639,20 @@ navy: #2e294e
 }
 }
 
-/* Photo Banner */
 
-.img-banner {
-    /* background-color: #4f89ec; */
-    padding: 10px 0px;
-    background-image: linear-gradient(rgba(133, 184, 255, 0.5), #4f89ec);
+
+.about-play {
+    background-color: rgba(133, 184, 255, 0.5);
+    padding: 60px;
 }
 
-/* code taken from https://codepen.io/tylerkempt/pen/vKKYzP */
-
-.container {
-    width: 100%;
-    overflow: hidden;
-    margin: 10px auto;
-    background: none;
+.about-play p {
+    font-size: 20px;
+    margin: 0 auto;
 }
 
-.photobanner {
-    height: 233px;
-    width: 3500px;
-}
-
-.photobanner img {
-	margin-right: 15px;
-	height: 233px;
-    width: 233px;
+.image-cycle img {
+    width: 50%;
+    margin: 30px;
     border-radius: 25px;
-}
-
-/*keyframe animations*/
-.first {
-    -webkit-animation: bannermove 45s linear infinite;
-       -moz-animation: bannermove 45s linear infinite;
-        -ms-animation: bannermove 45s linear infinite;
-         -o-animation: bannermove 45s linear infinite;
-            animation: bannermove 45s linear infinite;
-}
- 
-@keyframes bannermove {
- 0% {margin-left: 25px;}
- 100% {margin-left: -2130px;}
-}
- 
-@-moz-keyframes bannermove {
- 0% {margin-left: 25px;}
- 100% {margin-left: -2130px;}
-}
- 
-@-webkit-keyframes bannermove {
- 0% {margin-left: 25px;}
- 100% {margin-left: -2130px;}
-}
- 
-@-ms-keyframes bannermove {
- 0% {margin-left: 25px;}
- 100% {margin-left: -2130px;}
-}
- 
-@-o-keyframes bannermove {
- 0% {margin-left: 25px;}
- 100% {margin-left: -2130px;}
-}
-
-@media screen and (max-width: 768px) {
-    .photobanner img {
-	margin-right: 5px;
-	height: 150px;
-    width: 150px;
-    }
-    .photobanner {
-    height: 150px;
-    }
 }
