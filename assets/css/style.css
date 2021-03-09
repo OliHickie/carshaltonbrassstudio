@@ -8,9 +8,10 @@ navy: #2e294e
 
 body {
     font-family: 'Roboto', sans-serif;
-    background: url(../images/hero-img.png) no-repeat top center fixed;
+    background: url(../images/hero-img2.png) no-repeat top center fixed;
     background-size: cover;
     height: 100vh;
+    width: 100%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
