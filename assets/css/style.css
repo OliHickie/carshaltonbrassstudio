@@ -646,6 +646,26 @@ body {
     }
 }
 
+/* Play About  */
+
+.signup-btn {
+    font-family: 'Bubblegum Sans', cursive;
+    color: #2b6d57;
+    background-color: #8DD1BA;
+    padding: 5px 20px;
+    text-decoration: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 2px 25px #fafafa;
+    transition: all 0.3s;
+    margin-bottom: 30px;
+}
+
+.signup-btn:hover {
+    color: #8DD1BA;
+    background-color: #2b6d57;
+    box-shadow: 0 0px 50px #fafafa;
+}
 
 .about-play {
     background-color: rgba(133, 184, 255, 0.5);
@@ -658,6 +678,7 @@ body {
 }
 
 .image-cycle-container {
+    padding-top: 30px;
     display: flex;
     align-items: space-around;
 }
