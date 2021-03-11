@@ -118,12 +118,16 @@ body {
 } 
 
 .bg-img {
-    background: url(../images/hero-img.png) no-repeat top center;
-    background-size: cover;
+    background: url(../images/hero-img.png) no-repeat top center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;     
     margin-top: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100vh;
 }
 
 .vh-85 {
