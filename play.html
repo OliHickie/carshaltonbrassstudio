@@ -46,46 +46,19 @@
     </header>
 
     <!-- head section -->
-    <div class="bg-img container-fluid">
-        <div class="play-header text-center">
-            <h1>Join us for one of our online playalong workshops</h1>
-            <h2>with especially arranged, recorded and produced backing
-                tracks for each session!</h2>
-            <div class="find-out-more text-center">
-                <h2>find out more</h2>
-                <p><i class="fas fa-chevron-down"></i></p>
+    <div class="">
+        <div class="bg-img">
+            <div class="play-header text-center ">
+                <h1>Join us for one of our online playalong workshops</h1>
+                <h2>with especially arranged, recorded and produced backing
+                    tracks for each session!</h2>
+                <div class="find-out-more text-center">
+                    <h2>find out more</h2>
+                    <p><i class="fas fa-chevron-down"></i></p>
+                </div>
             </div>
         </div>
     </div>
-
-    <!-- form -->
-    <div class="form-container" id="form-display">
-        <form onsubmit="return sendMail(this); closeForm();">
-            <i class="fas fa-times-circle" onclick="closeForm()"></i>
-            <p class="signup-header">Sign up for the next play along...</p>
-            <label class="sr-only" for="name">Name</label>
-            <input type="text" name="name" class="form-control" id="name" aria-describedby="name" placeholder="Name"
-                required>
-            <label class="sr-only" for="email">Email</label>
-            <input type="email" name="email" class="form-control" id="email" aria-describedby="emailAddress"
-                placeholder="Email Address" required>
-            <label class="sr-only" for="signUpInstrument">Instrument</label>
-            <input type="text" name="instrument" class="form-control" id="signUpInstrument"
-                aria-describedby="Instrument" placeholder="Instrument" required>
-            <label class="sr-only" for="signUpGrade">Grade</label>
-            <input type="text" name="grade" class="form-control" id="signUpGrade" aria-describedby="grade"
-                placeholder="Grade" required>
-            <select class="form-control">
-                <option>Choose a play along...</option>
-                <option>Beginner grade 1-4</option>
-                <option>Intermediate grade 4-6</option>
-                <option>Senior grade 6+</option>
-            </select>
-            <button type="submit" class="btn submit-btn">Submit</button>
-        </form>
-        <button class="btn cancel-btn" onclick="closeForm()">Cancel</button>
-    </div>
-
     <div class="about-play text-center">
         <div class="row">
             <div class="col-12 col-lg-4 image-cycle-container">
@@ -128,6 +101,33 @@
     </div>
 
     <!-- Boxes  -->
+    <!-- form -->
+    <div class="form-container" id="form-display">
+        <form onsubmit="return sendMail(this); closeForm();">
+            <i class="fas fa-times-circle" onclick="closeForm()"></i>
+            <p class="signup-header">Sign up for the next play along...</p>
+            <label class="sr-only" for="name">Name</label>
+            <input type="text" name="name" class="form-control" id="name" aria-describedby="name" placeholder="Name"
+                required>
+            <label class="sr-only" for="email">Email</label>
+            <input type="email" name="email" class="form-control" id="email" aria-describedby="emailAddress"
+                placeholder="Email Address" required>
+            <label class="sr-only" for="signUpInstrument">Instrument</label>
+            <input type="text" name="instrument" class="form-control" id="signUpInstrument"
+                aria-describedby="Instrument" placeholder="Instrument" required>
+            <label class="sr-only" for="signUpGrade">Grade</label>
+            <input type="text" name="grade" class="form-control" id="signUpGrade" aria-describedby="grade"
+                placeholder="Grade" required>
+            <select class="form-control">
+                <option>Choose a play along...</option>
+                <option>Beginner grade 1-4</option>
+                <option>Intermediate grade 4-6</option>
+                <option>Senior grade 6+</option>
+            </select>
+            <button type="submit" class="btn submit-btn">Submit</button>
+        </form>
+        <button class="btn cancel-btn" onclick="closeForm()">Cancel</button>
+    </div>
 
     <div class="twitter-container">
         <div class="twitter-btn-container">
