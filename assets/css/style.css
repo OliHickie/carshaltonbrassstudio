@@ -118,7 +118,7 @@ body {
 } 
 
 .bg-img {
-    background: url(../images/hero-img.png) no-repeat top center fixed;
+    background: url(../images/hero-img.png) no-repeat top center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
