@@ -127,7 +127,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 85vh;
 
     position: relative;
 }
@@ -517,16 +517,18 @@ body {
     color: #8DD1BA;
     font-size: 4em;
     text-shadow: 2px 2px #2e294e;
+    margin: 0 auto;
 }
 
 .play-header h2 {
     color: #eeeeee;
     margin-top: 37px;
     margin-bottom: 45px;
-    width: 66%;
-    letter-spacing: 0.5px;
-    margin: 0 auto;
+    margin: 30px auto;
+    max-width: 70%;
+    word-spacing: 0.5px;
 }
+
 
 @media screen and (max-width: 960px) {
     .play-header {
@@ -539,7 +541,6 @@ body {
     }
     .play-header h2 {
         margin-top: 25px;
-        margin-bottom: 25px;
         width: 90%;
     }
 }
@@ -628,7 +629,7 @@ body {
 }
 
 .find-out-more {
-    font-size: 3em;
+    font-size: 2em;
     color: blue;
     font-family: 'Bubblegum Sans', cursive;
 }
@@ -669,5 +670,5 @@ body {
 .image-cycle img {
     width: 75%;
     border-radius: 25px;
-    margin: 0 auto;
+    margin: 10px auto;
 }
