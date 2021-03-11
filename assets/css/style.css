@@ -636,14 +636,13 @@ body {
     .form-container {
     width: 90%;
     left: 5%;
+    }
 }
-}
-
 
 
 .about-play {
     background-color: rgba(133, 184, 255, 0.5);
-    padding: 60px;
+    padding: 30px;
 }
 
 .about-play p {
@@ -651,8 +650,18 @@ body {
     margin: 0 auto;
 }
 
+.image-cycle-container {
+    display: flex;
+    align-items: space-around;
+}
+
+.image-cycle {
+    display: flex;
+    align-items: center;
+}
+
 .image-cycle img {
-    width: 50%;
-    margin: 30px;
+    width: 75%;
     border-radius: 25px;
+    margin: 0 auto;
 }
