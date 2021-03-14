@@ -570,7 +570,7 @@ body {
 
 /* form  */
 .fa-times-circle {
-    color: red;
+    color: rgb(200, 0, 0);
     font-size: x-large;
     position: absolute;
     right: 0;
@@ -583,7 +583,7 @@ body {
     position: fixed;
     top: 100px;
     left: 30%;
-    background: radial-gradient(circle, rgba(249,249,249,1) 0%, rgba(79,137,236,1) 100%);
+    background-color: rgb(79,137,236);
     z-index: 2;
     display: none;
     border-radius: 25px;
