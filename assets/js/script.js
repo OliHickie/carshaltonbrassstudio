@@ -5,6 +5,8 @@ function twitterFunction() {
     } else {
         x.style.display = "none";
     }
+
+    $(".fa-chevron-circle-down").toggleClass("flip-icon")
 }
 
 function playPhotos() {
