@@ -67,6 +67,11 @@ body {
     color: #906d97;
 }
 
+.grey-text {
+    color: #62676e;
+
+}
+
 
 /* Nav bar */
 
@@ -272,8 +277,6 @@ body {
 
 .card p {
     font-family: 'Roboto', sans-serif;
-    color: #62676e;
-    text-align: left;
     margin: 30px;
 }
 
@@ -696,10 +699,17 @@ body {
 .image-cycle {
     display: flex;
     align-items: center;
+    height: 100%;
 }
 
 .image-cycle img {
     width: 75%;
     border-radius: 25px;
     margin: 10px auto;
+}
+
+@media screen and (min-width: 1200px) {
+    .image-cycle {
+        height: 50%;
+    }
 }
