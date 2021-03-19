@@ -11,17 +11,17 @@ function twitterFunction() {
 
 function playPhotos() {
     var photos = [
-        '<img src="assets/images/play/bbp-1.jpg" alt="big brass play along image1">',
-        '<img src="assets/images/play/bbp-2.jpg" alt="big brass play along image 2">',
-        '<img src="assets/images/play/bbp-3.jpg" alt="big brass play along image 3">',
-        '<img src="assets/images/play/bbp-4.jpg" alt="big brass play along image 4">',
-        '<img src="assets/images/play/bbp-5.jpg" alt="big brass play along image 5">',
-        '<img src="assets/images/play/bbp-6.jpg" alt="big brass play along image 6">',
-        '<img src="assets/images/play/bbp-7.jpg" alt="big brass play along image 7">',
-        '<img src="assets/images/play/bbp-8.jpg" alt="big brass play along image 8">',
-        '<img src="assets/images/play/bbp-9.jpg" alt="big brass play along image 9">',
-        '<img src="assets/images/play/bbp-10.jpg" alt="big brass play along image 10">',
-        '<img src="assets/images/play/bbp-11.jpg" alt="big brass play along image 11">'
+        '<img src="assets/images/play/bbp-1.jpg" alt="big brass play along image1" class="img-shadow">',
+        '<img src="assets/images/play/bbp-2.jpg" alt="big brass play along image 2" class="img-shadow">',
+        '<img src="assets/images/play/bbp-3.jpg" alt="big brass play along image 3" class="img-shadow">',
+        '<img src="assets/images/play/bbp-4.jpg" alt="big brass play along image 4" class="img-shadow">',
+        '<img src="assets/images/play/bbp-5.jpg" alt="big brass play along image 5" class="img-shadow">',
+        '<img src="assets/images/play/bbp-6.jpg" alt="big brass play along image 6" class="img-shadow">',
+        '<img src="assets/images/play/bbp-7.jpg" alt="big brass play along image 7" class="img-shadow">',
+        '<img src="assets/images/play/bbp-8.jpg" alt="big brass play along image 8" class="img-shadow">',
+        '<img src="assets/images/play/bbp-9.jpg" alt="big brass play along image 9" class="img-shadow">',
+        '<img src="assets/images/play/bbp-10.jpg" alt="big brass play along image 10" class="img-shadow">',
+        '<img src="assets/images/play/bbp-11.jpg" alt="big brass play along image 11" class="img-shadow">'
     ]
 
     function setPhotos(id, initialPhoto) {
@@ -64,9 +64,9 @@ function playPhotos() {
 
 
 $(document).ready(function () {
-    $("#picOne").append('<img src="assets/images/play/bbp-1.jpg" alt="big brass play along image1">');
-    $("#picTwo").append('<img src="assets/images/play/bbp-7.jpg" alt="big brass play along image1">');
-    $("#picThree").append('<img src="assets/images/play/bbp-4.jpg" alt="big brass play along image1">');
-    $("#picFour").append('<img src="assets/images/play/bbp-9.jpg" alt="big brass play along image1">');
+    $("#picOne").append('<img src="assets/images/play/bbp-1.jpg" alt="big brass play along image" class="img-shadow">');
+    $("#picTwo").append('<img src="assets/images/play/bbp-7.jpg" alt="big brass play along image" class="img-shadow">');
+    $("#picThree").append('<img src="assets/images/play/bbp-4.jpg" alt="big brass play along image" class="img-shadow">');
+    $("#picFour").append('<img src="assets/images/play/bbp-9.jpg" alt="big brass play along image" class="img-shadow">');
     playPhotos()
 });
