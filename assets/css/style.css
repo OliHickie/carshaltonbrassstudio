@@ -402,48 +402,38 @@ body {
 
 /* Contact Page  */
 
-.jumbotron-contact {
-    background-color: rgba(80, 91, 106, 0.7);
-    font-family: 'Bubblegum Sans', cursive;
-    color: #8DD1BA;
-    padding: 30px;
-    border-radius: 25px;
-    margin: 0px 20px;
-    max-height: 80%;
-}
-
-.jumbotron-contact h1 {
-    text-shadow: 2px 2px #2e294e;
-}
-
-.jumbotron-contact a {
+.contact-icon {
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-size: 25px;
+    padding: 15px 15px 15px 0px;
     text-decoration: none;
     letter-spacing: 0.2px;
     color: #fafafa;
     background-color: #8DD1BA;
     border-radius: 25px;
-    padding-right: 15px;
     white-space: nowrap;
 }
 
-.jumbotron-contact a:hover {
+.contact-icon:hover {
     color: #2b6d57;
 }
 
 
-.jumbotron-contact a:active {
+.contact-icon:active {
     font-weight: 200;
 }
 
-.jumbotron-contact a i {
+.contact-icon i {
     font-size: 30px;
     margin: 15px;
 }
 
-.contact-info {
-    padding: 30px 0px;
+@media screen and (max-width: 330px) {
+    .contact-icon {
+    font-size: 15px;
+    padding: 10px 10px 10px 0px;
+}
+
 }
 
 /* Play  */
