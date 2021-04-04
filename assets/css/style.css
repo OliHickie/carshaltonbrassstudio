@@ -732,7 +732,7 @@ body {
 
 .price-list {
     margin: 20px;
-    padding: 30px 15px;
+    padding: 15px 5px;
     border: 2px solid #bf7379;
 }
 
@@ -745,18 +745,17 @@ body {
 }
 
 .price-list table td {
-    padding: 5px 60px;
+    width: 50%;
 }
 
-@media screen and (max-width: 960px) {
-    .price-list {
-    margin: 20px;
-    padding: 15px 5px;
-    }
-
+@media screen and (max-width: 600px) {
     .price-list table td {
-    padding: 5px 30px;
+    text-align: right;
 }
+    .studio-learn-img {
+    width: 80%;
+}
+
 }
 
 
