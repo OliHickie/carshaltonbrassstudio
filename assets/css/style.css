@@ -600,7 +600,6 @@ body {
     backdrop-filter: blur(10px);
     z-index: 2;
     display: none;
-    border-radius: 25px;
     padding: 30px;
     overflow: scroll;
 }
@@ -751,6 +750,7 @@ body {
 
 .price-list table td {
     width: 50%;
+    text-align: center;
 }
 
 @media screen and (max-width: 600px) {
