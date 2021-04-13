@@ -730,15 +730,23 @@ body {
     margin: 30px;
 }
 
+.learn-img-container {
+    padding: 0px 30px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .studio-learn-img {
-    width: 40%;
+    max-width: 80%;
     border-radius: 25px;
     display: block;
-    margin: 30px auto;
+    margin: 0 auto;
+    max-height: 340px;
 }
 
 .price-list {
-    margin: 20px;
     padding: 15px 5px;
     border: 2px solid #bf7379;
 }
@@ -756,14 +764,19 @@ body {
     text-align: center;
 }
 
+@media screen and (max-width: 959px) {
+    .studio-learn-img {
+        margin-top: 20px;
+    }
+}
+
 @media screen and (max-width: 600px) {
     .price-list table td {
     text-align: right;
-}
+    }
     .studio-learn-img {
     width: 80%;
-}
-
+    }
 }
 
 
