@@ -77,7 +77,10 @@ body {
 
 .grey-text {
     color: #3B3B3C;
+}
 
+.active {
+    border-bottom: 10px solid;
 }
 
 .img-shadow {
