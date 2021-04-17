@@ -75,14 +75,6 @@ p {
   background-color: rgba(255, 154, 162, 0.5);
 }
 
-/* image classes  */
-
-.img-shadow {
-  -webkit-box-shadow: 0px 3px 5px #62676e;
-  -moz-box-shadow: 0px 3px 5px #62676e;
-  box-shadow: 0px 3px 5px #62676e;
-}
-
 /* buttons */
 
 .button {
@@ -105,7 +97,23 @@ p {
 }
 
 .button:focus {
-    outline: none;
+  outline: none;
+}
+
+/* images  */
+
+.standard-image {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 80%;
+  border-radius: 25px;
+  padding: 10px;
+  min-width: 150px;
+  -webkit-box-shadow: 0px 3px 5px #62676e;
+  -moz-box-shadow: 0px 3px 5px #62676e;
+  box-shadow: 0px 3px 5px #62676e;
+  border: solid 3px #2b6d57;
 }
 
 /* Nav bar */
