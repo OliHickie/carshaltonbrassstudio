@@ -15,8 +15,9 @@ h1 {
 }
 
 h2 {
-  font-size: 32px;
-  color: #eeeeee;
+  font-size: 42px;
+  margin: 45px 0px 30px 0px;
+  color: #ffffff;
 }
 
 h3 {
@@ -65,16 +66,6 @@ p {
   color: #fff900;
 }
 
-/* background colors  */
-
-.bg-green {
-  background-color: #8dd1ba;
-}
-
-.bg-pink {
-  background-color: rgba(255, 154, 162, 0.5);
-}
-
 /* buttons */
 
 .button {
@@ -106,6 +97,8 @@ p {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+  display: block;
+  margin: 0 auto;
   width: 80%;
   border-radius: 25px;
   padding: 10px;
@@ -190,5 +183,16 @@ p {
 
 .hero-heading h2 {
   word-spacing: 16px;
-  margin: 45px 0px;
+}
+
+/* about section */
+
+.about-container {
+  background-color: #8dd1ba;
+}
+
+/* learn section  */
+
+.learn-container {
+  background-color: rgba(255, 154, 162, 0.5);
 }
