@@ -22,6 +22,7 @@ h2 {
 
 h3 {
   font-size: 24px;
+  color: #ffffff;
 }
 
 p {
@@ -89,24 +90,6 @@ p {
 
 .button:focus {
   outline: none;
-}
-
-/* images  */
-
-.standard-image {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  display: block;
-  margin: 0 auto;
-  width: 80%;
-  border-radius: 25px;
-  padding: 10px;
-  min-width: 150px;
-  -webkit-box-shadow: 0px 3px 5px #62676e;
-  -moz-box-shadow: 0px 3px 5px #62676e;
-  box-shadow: 0px 3px 5px #62676e;
-  border: solid 3px #2b6d57;
 }
 
 /* Nav bar */
@@ -189,10 +172,60 @@ p {
 
 .about-container {
   background-color: #8dd1ba;
+  padding-bottom: 45px;
+}
+
+.about-image {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  border-radius: 25px;
+  padding: 10px;
+  min-width: 150px;
+  -webkit-box-shadow: 0px 3px 5px #62676e;
+  -moz-box-shadow: 0px 3px 5px #62676e;
+  box-shadow: 0px 3px 5px #62676e;
+  border: solid 3px #2b6d57;
 }
 
 /* learn section  */
 
 .learn-container {
   background-color: rgba(255, 154, 162, 0.5);
+}
+
+.learn-image {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  border-radius: 25px;
+  padding: 10px;
+  min-width: 150px;
+  -webkit-box-shadow: 0px 3px 5px #62676e;
+  -moz-box-shadow: 0px 3px 5px #62676e;
+  box-shadow: 0px 3px 5px #62676e;
+  border: solid 3px #bf7379;
+}
+
+.price-list {
+  background-color:#8f96a0;
+  padding: 10px;
+  border: 2px solid #bf7379;
+  border-radius: 25px;
+}
+
+.price-list table td {
+  width: 50%;
+  text-align: center;
+  
+}
+
+.table-text {
+  font-size: 14px;
 }
