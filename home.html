@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carshalton Brass Studio</title>
+    <link rel="shortcut icon" href="assets/images/logo-icon.png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/8b879e8b27.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style2.css" />
+</head>
+
+<body class="d-flex flex-column h-100">
+    <header>
+        <!-- NavBar -->
+        <div class="navbar navbar-expand-lg navbar-light">
+            <div><a href="#"><img class="logo" src="assets/images/favlogo2.png" alt="Carshalton Brass Studio Logo"></a>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+                aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse nav-container text-center" id="navbarToggler">
+                <ul class="navbar-nav text-center">
+                    <li class="navbar-item"><a class="green-text active" href="index.html">Home</a></li>
+                    <li class="navbar-item"><a href="learn.html" class="pink-text">Learn</a></li>
+                    <li class="navbar-item"><a href="play.html" class="blue-text">Play</a></li>
+                    <li class="navbar-item"><a href="contact.html" class="yellow-text">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- Hero callout -->
+    <section>
+        <div class="bg-img">
+            <div class="hero-heading text-center">
+                <h1>Welcome to <br>Carshalton Brass Studio</h1>
+                <h2>Learn | Play | Enjoy</h2>
+                <button class="button">
+                    Enquire Now!
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section  -->
+    <section class="bg-green">
+        <div class="row content-max-width">
+            <div class="col-md-6 card">
+                <div class="about-studio">
+                    <div class="about-imgs"><img src="assets/images/flugal-sq.jpg" alt="The owners of CBS, laughing" class="img-shadow">
+                    </div>
+                    <h1 class="text-center">
+                        About the Studio
+                    </h1>
+                    <p class ="grey-text"><strong class="dark-green-text">Carshalton Brass Studio</strong> (or ‘the garage’ as it was known then) was
+                        built in early 2020 as
+                        all lessons moved online. Located at the bottom of the garden, sound proofed and treated, it was
+                        initially an act of kindness to the neighbours as our teaching hours meant there was music to be
+                        heard all day every day from the house. The studio is now equipped to produce the finest online
+                        audio possible and is spacious enough for group, as well as individual, lessons. <br><br> We
+                        provide
+                        instrument hire options as well as a rehearsal and recording space. Our online ensembles, such
+                        as the <a href="https://www.instagram.com/explore/tags/thebigbrassplayalong/?hl=en"
+                            target="_blank" class="dark-green-text">#TheBigBrassPlayalong</a>, have proven hugely popular
+                        with
+                        participants from all across the UK taking part.
+                        <br><br> Music theory and brass arranging lessons are
+                        taught as well as any brass instrument. Carshalton Brass Studio has self published a book of
+                        brass arrangements entitled 'Duets' as well as 'Trios' and have three pieces for full brass band
+                        published with <a href="https://www.primavistamusikk.com/" target="_blank"
+                            class="dark-green-text">Prima Vista Music</a>.</p>
+                </div>
+            </div>
+            <div class="col-md-6 card">
+                <div class="about-people h-100">
+                    <div class="about-imgs"><img src="assets/images/cbs-laugh.jpg" alt="The owners of CBS, laughing" class="img-shadow">
+                    </div>
+                    <h1 class="text-center">
+                        About Cai and Vic
+                    </h1>
+                    <p class ="grey-text">Cai and Vic met whilst studying the trumpet at the Royal Northern College of Music in
+                        Manchester.
+                        They have over 12 years' experience of teaching all brass instruments to pupils of any
+                        ability,
+                        from any age group, both within individual lessons and group settings. <br><br> With the sound
+                        of
+                        trumpet filling the house on a daily basis, they are both deeply passionate about brass
+                        playing
+                        and aim to excite and motivate their pupils to the same degree. They endeavour to ensure
+                        that
+                        every pupil fulfils their potential and offer support to those needing a little extra
+                        encouragement.<br><br> Huge pride is taken in watching pupils grow and improve. Enjoyment and
+                        appreciation are taught alongside a great understanding of all technical aspects of the
+                        instrument in all of their lessons and they’re often praised for their efforts to make
+                        learning
+                        a fun environment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- twitter  -->
+    <div class="twitter-container">
+        <div class="twitter-btn-container">
+            <button class="twitter-button" onclick="twitterFunction()">Click for latest news and events! <i
+                    class="fas fa-chevron-circle-down"></i></button>
+        </div>
+        <!-- bug - button would work 2nd time until inline style -->
+        <div id="twitter-feed" style="display: none;">
+            <a class="twitter-timeline" data-lang="en" data-width="400" data-height="500"
+                href="https://twitter.com/BrassStudio?ref_src=twsrc%5Etfw">Tweets by BrassStudio</a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
