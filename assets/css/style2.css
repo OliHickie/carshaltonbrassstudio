@@ -1,6 +1,13 @@
 /* font-family: 'Bubblegum Sans', cursive; */
 /* font-family: 'Roboto', sans-serif; */
 
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -16,7 +23,7 @@ h1 {
 
 h2 {
   font-size: 42px;
-  margin: 45px 0px 30px 0px;
+  margin: 30px 0px;
   color: #ffffff;
 }
 
@@ -170,34 +177,20 @@ p {
 
 /* about section */
 
+.heading-right {
+  text-align: end;
+}
+
+.heading-left {
+  text-align: start;
+}
+
 .about-container {
   background-color: #8dd1ba;
-  padding-bottom: 45px;
+  padding: 45px 10px;
 }
 
-.about-image {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  display: block;
-  margin: 0 auto;
-  width: 80%;
-  border-radius: 25px;
-  padding: 10px;
-  min-width: 150px;
-  -webkit-box-shadow: 0px 3px 5px #62676e;
-  -moz-box-shadow: 0px 3px 5px #62676e;
-  box-shadow: 0px 3px 5px #62676e;
-  border: solid 3px #2b6d57;
-}
-
-/* learn section  */
-
-.learn-container {
-  background-color: rgba(255, 154, 162, 0.5);
-}
-
-.learn-image {
+.centered-image {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
@@ -210,22 +203,87 @@ p {
   -webkit-box-shadow: 0px 3px 5px #62676e;
   -moz-box-shadow: 0px 3px 5px #62676e;
   box-shadow: 0px 3px 5px #62676e;
+}
+
+.about-image {
+  border: solid 3px #2b6d57;
+}
+
+/* learn section  */
+
+.learn-container {
+  background-color: rgba(255, 154, 162, 0.5);
+  padding: 45px 10px;
+}
+
+.learn-image {
   border: solid 3px #bf7379;
 }
 
 .price-list {
-  background-color:#8f96a0;
-  padding: 10px;
-  border: 2px solid #bf7379;
+  background-color: #bf7379;
+  padding: 30px 10px;
+  margin-top: 30px;
   border-radius: 25px;
+  color: #f9f9f9;
+}
+
+.price-list table {
+  width: 80%;
+  margin: 0 auto;
 }
 
 .price-list table td {
   width: 50%;
-  text-align: center;
-  
 }
 
 .table-text {
   font-size: 14px;
+  color: #f9f9f9;
+  margin-top: 10px;
+  letter-spacing: 0.5px;
+}
+
+/* Footer  */
+
+.footer {
+  background-color: #8f96a0;
+  padding: 30px;
+}
+
+.social-nav-item {
+  font-size: 35px;
+}
+
+.social-icons-list {
+  display: flex;
+  justify-content: space-between;
+  width: 33%;
+  margin: 0 auto;
+  font-size: 200%;
+}
+
+.copyright {
+  font-family: "Roboto", sans-serif;
+  font-size: medium;
+  color: #fafafa;
+  margin: 0;
+  letter-spacing: 0.75px;
+}
+
+.copyright a {
+  text-decoration: none;
+  color: #2e294e;
+  letter-spacing: 0.75px;
+}
+
+.copyright a:hover {
+  color: #fafafa;
+}
+
+@media screen and (max-width: 768px) {
+  .social-icons-list {
+    width: 80%;
+    font-size: 150%;
+  }
 }
