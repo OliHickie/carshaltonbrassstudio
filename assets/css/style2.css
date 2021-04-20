@@ -28,7 +28,7 @@ h2 {
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 32px;
   color: #ffffff;
 }
 
@@ -260,30 +260,12 @@ p {
   justify-content: space-between;
   width: 33%;
   margin: 0 auto;
-  font-size: 200%;
-}
-
-.copyright {
-  font-family: "Roboto", sans-serif;
-  font-size: medium;
-  color: #fafafa;
-  margin: 0;
-  letter-spacing: 0.75px;
-}
-
-.copyright a {
-  text-decoration: none;
-  color: #2e294e;
-  letter-spacing: 0.75px;
-}
-
-.copyright a:hover {
-  color: #fafafa;
+  font-size: 36px;
 }
 
 @media screen and (max-width: 768px) {
   .social-icons-list {
     width: 80%;
-    font-size: 150%;
+    font-size: 24px;
   }
 }
