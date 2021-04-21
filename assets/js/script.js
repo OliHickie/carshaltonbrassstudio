@@ -9,5 +9,15 @@ function twitterFunction() {
   $(".fa-chevron-circle-down").toggleClass("flip-icon");
 }
 
+function navbarScroll() {
+  $(".navbar-item").click(function () {
+    $("html,body").animate(
+      {scrollTop: $("#" + this.id + "-section").offset().top - 125,}
+    ),
+    $(".navbar-collapse").collapse("hide");
+  });
+}
 
-
+$(document).ready(function () {
+  navbarScroll();
+});
