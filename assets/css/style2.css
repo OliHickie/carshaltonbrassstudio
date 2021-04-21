@@ -256,12 +256,26 @@ p {
 }
 
 .play-hashtag {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 700;
 }
 
-/* Carousel  */
+.play-image {
+  width: 100%;
+  border-radius: 25px;
+}
 
+.padding-top {
+  padding-top: 24px;
+}
+
+.padding-bottom {
+  padding-bottom: 24px;
+}
+
+.play-text-container {
+  padding: 20px;
+}
 
 
 
@@ -290,4 +304,74 @@ p {
     font-size: 24px;
   }
 }
+
+/* Twitter  */
+
+.twitter-container {
+  position: fixed;
+  top: 120px;
+  right: 15px;
+  max-width: 33%;
+}
+
+.twitter-button {
+  color: #2b6d57;
+  background-color: #8dd1ba;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 100px;
+  cursor: pointer;
+  float: right;
+  padding: 5px 10px;
+  white-space: nowrap;
+  font-family: "Bubblegum Sans", cursive;
+  font-size: 150%;
+}
+
+.twitter-button:focus {
+  outline: 0;
+}
+
+.twitter-button:active {
+  color: #8dd1ba;
+  background-color: #2b6d57;
+  outline: none;
+  border: none;
+}
+
+.fa-chevron-circle-down {
+  -moz-transition: transform 0.5s;
+  -webkit-transition: transform 0.5s;
+  transition: transform 0.5s;
+}
+
+.flip-icon {
+  transform: rotate(180deg);
+}
+
+@media screen and (max-width: 600px) {
+  .twitter-container {
+    position: fixed;
+    top: 80px;
+    right: 5px;
+    max-width: 66%;
+  }
+
+  .twitter-button {
+    padding: 5px 8px;
+    font-family: "Bubblegum Sans", cursive;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 100%;
+  }
+}
+@media screen and (max-width: 330px) {
+  .twitter-container {
+    right: 3px;
+    max-width: 60%;
+  }
+  .twitter-button {
+    font-size: 70%;
+  }
+}
+
 
