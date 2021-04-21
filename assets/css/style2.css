@@ -13,23 +13,25 @@ h2,
 h3,
 h4 {
   font-family: "Bubblegum Sans", cursive;
-  text-shadow: 2px 2px #2e294e;
+  
 }
 
 h1 {
   font-size: 60px;
   color: #8dd1ba;
+  text-shadow: 2px 2px #2e294e;
 }
 
 h2 {
   font-size: 42px;
   margin: 30px 0px;
-  color: #ffffff;
+  color: #f9f9f9;
+  text-shadow: 2px 2px #2e294e;
 }
 
 h3 {
   font-size: 32px;
-  color: #ffffff;
+  color: #f9f9f9;
 }
 
 p {
@@ -177,6 +179,11 @@ p {
 
 /* about section */
 
+.about-container {
+  background-color: #8dd1ba;
+  padding: 45px 10px;
+}
+
 .heading-right {
   text-align: end;
 }
@@ -185,10 +192,7 @@ p {
   text-align: start;
 }
 
-.about-container {
-  background-color: #8dd1ba;
-  padding: 45px 10px;
-}
+
 
 .centered-image {
   position: relative;
@@ -196,7 +200,7 @@ p {
   transform: translateY(-50%);
   display: block;
   margin: 0 auto;
-  width: 100%;
+  width: 90%;
   border-radius: 25px;
   padding: 10px;
   min-width: 150px;
@@ -223,7 +227,7 @@ p {
 .price-list {
   background-color: #bf7379;
   padding: 30px 10px;
-  margin-top: 30px;
+  margin-top: 15px;
   border-radius: 25px;
   color: #f9f9f9;
 }
@@ -243,6 +247,14 @@ p {
   margin-top: 10px;
   letter-spacing: 0.5px;
 }
+
+/* Play  */
+
+.play-container {
+  background-color: #71deff;
+  padding: 45px 10px;
+}
+
 
 /* Footer  */
 
@@ -269,3 +281,4 @@ p {
     font-size: 24px;
   }
 }
+
