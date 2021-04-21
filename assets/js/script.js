@@ -12,7 +12,7 @@ function twitterFunction() {
 function navbarScroll() {
   $(".navbar-item").click(function () {
     $("html,body").animate(
-      {scrollTop: $("#" + this.id + "-section").offset().top - 100,}
+      {scrollTop: $("#" + this.id + "-section").offset().top - 100, }, 1
     ),
     $(".navbar-collapse").collapse("hide");
   });

@@ -46,6 +46,10 @@ p {
   color: #3b3b3c;
 }
 
+.text-shadow {
+  text-shadow: 2px 2px #2e294e;
+}
+
 .content-max-width {
   max-width: 1200px;
   margin: 0 auto;
@@ -136,6 +140,11 @@ p {
   font-family: "Bubblegum Sans", sans-serif;
   font-size: 36px;
   text-shadow: 0.5px 0.5px #2e294e;
+}
+
+.navbar li:hover {
+  cursor: pointer;
+  color: #f9f9f9;
 }
 
 .navbar button {
@@ -253,7 +262,7 @@ p {
 
 .play-container {
   background-color: #71deff;
-  padding: 45px 10px;
+  padding: 70px 10px;
 }
 
 .play-hashtag {
@@ -332,15 +341,18 @@ p {
   font-size: 150%;
 }
 
+.twitter-button:hover {
+  color: #8dd1ba;
+  background-color: #2b6d57;
+  border: #2b6d57;
+}
+
 .twitter-button:focus {
   outline: 0;
 }
 
 .twitter-button:active {
-  color: #8dd1ba;
-  background-color: #2b6d57;
-  outline: none;
-  border: none;
+  padding: 5px 7px
 }
 
 .fa-chevron-circle-down {
