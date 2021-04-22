@@ -13,6 +13,13 @@
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/8b879e8b27.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style2.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_5w7OxneLUZpB3gXz7PHmh");
+        })();
+    </script>
 </head>
 
 <body class="d-flex flex-column">
@@ -275,9 +282,11 @@
                                     class="fas fa-map-marker-alt dark-blue-text" target="_blank"> All
                                     Saints Church, Carshalton</em></a> once restrictions allow.
                         </p>
+                        
                         <div class="text-center">
                             <h3 class="text-shadow">Sign up for a play along ...</h3>
-                            <button class="button">
+                        
+                            <button class="button" onclick="openForm()">
                                 Sign Up!
                             </button>
                         </div>
@@ -306,7 +315,32 @@
         </div>
     </section>
 
-
+     <!-- Sign Up Form  -->
+     <div class="form-container" id="form-display">
+        <form onsubmit="return sendMail(this); closeForm();">
+            <h2 class="text-center">Sign up to our Play Along mailing list ...</h2>
+            <label class="sr-only" for="name">Name</label>
+            <input type="text" name="name" class="form-control" id="name" aria-describedby="name" placeholder="Name"
+                required>
+            <label class="sr-only" for="email">Email</label>
+            <input type="email" name="email" class="form-control" id="email" aria-describedby="emailAddress"
+                placeholder="Email Address" required>
+            <label class="sr-only" for="signUpInstrument">Instrument</label>
+            <input type="text" name="instrument" class="form-control" id="signUpInstrument"
+                aria-describedby="Instrument" placeholder="Instrument" required>
+            <label class="sr-only" for="signUpGrade">Grade</label>
+            <input type="text" name="grade" class="form-control" id="signUpGrade" aria-describedby="grade"
+                placeholder="Grade" required>
+            <select class="form-control">
+                <option>Choose a play along...</option>
+                <option>Beginner grade 1-4</option>
+                <option>Intermediate grade 4-6</option>
+                <option>Senior grade 6+</option>
+            </select>
+            <button type="submit" class="button submit-btn">Submit</button>
+            <button type="button" class="button cancel-btn" onclick="closeForm()">Cancel</button>
+        </form>
+    </div>
 
 
 
@@ -367,6 +401,7 @@
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
         </script>
     <script type="text/javascript" src="assets/js/script.js"></script>
+    <script src="assets/js/signup-form.js"></script>
 </body>
 
 </html>
