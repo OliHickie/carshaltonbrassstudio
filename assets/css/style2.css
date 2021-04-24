@@ -81,8 +81,8 @@ p {
   color: #006380;
 }
 
-.yellow-text {
-  color: #fff900;
+.orange-text {
+  color: #ffdfba;
 }
 
 /* buttons */
@@ -202,8 +202,6 @@ p {
   text-align: start;
 }
 
-
-
 .centered-image {
   position: relative;
   top: 50%;
@@ -289,6 +287,22 @@ p {
 
 .play-text {
   padding: 10px 0px
+}
+
+/* Contact Section  */
+.contact-container {
+  background-color: #ffdfba;
+  padding: 45px 10px;
+}
+
+.contact-inner-container {
+  background-color: #ffbc6f;
+  padding: 30px;
+  border-radius: 25px;
+}
+
+.contact-inner-container h2 {
+  margin: 0px 30px;
 }
 
 
@@ -405,7 +419,6 @@ p {
   z-index: 20;
   display: none;
 }
-
 
 .form-container form {
   width: 30%;

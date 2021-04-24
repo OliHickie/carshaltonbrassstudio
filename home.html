@@ -38,7 +38,7 @@
                     <li class="navbar-item green-text" id="home">Home</li>
                     <li class="navbar-item pink-text" id="learn">Learn</li>
                     <li class="navbar-item blue-text" id="play">Play</li>
-                    <li class="navbar-item yellow-text" id="contact">Contact</li>
+                    <li class="navbar-item orange-text" id="contact">Contact</li>
                 </ul>
             </div>
         </div>
@@ -50,7 +50,7 @@
             <div class="hero-heading text-center">
                 <h1>Welcome to <br>Carshalton Brass Studio</h1>
                 <h2>Learn | Play | Enjoy</h2>
-                <button class="button">
+                <button class="button contact-button">
                     Enquire Now!
                 </button>
             </div>
@@ -128,7 +128,7 @@
         </div>
     </section>
 
-
+    <!-- Learn Section  -->
     <section class="learn-container" id="learn-section">
         <div class="content-max-width">
             <h2 class="">Come and Learn with us!</h2>
@@ -206,7 +206,7 @@
                     <h3 class="dark-pink-text">
                         For lesson enquiries, please contact us
                     </h3>
-                    <button class="button">
+                    <button class="button contact-button" >
                         Enquire Now!
                     </button>
                 </div>
@@ -214,6 +214,7 @@
         </div>
     </section>
 
+    <!-- Play Section  -->
     <section class="play-container" id="play-section">
         <div class="content-max-width">
             <div class="row">
@@ -273,8 +274,10 @@
                             friendly environment.<br><br>
 
                             Our Playalong Pal programme aims to connect those of similar age and grades within our
-                            playalong groups and encourages correspondence so that musicians across the UK can interact and work
-                            towards the common goal of playing high quality music. We encourage a culture of creativity and aim
+                            playalong groups and encourages correspondence so that musicians across the UK can interact
+                            and work
+                            towards the common goal of playing high quality music. We encourage a culture of creativity
+                            and aim
                             to bring people together through the shared experience of brass. <br><br>
 
                             Rehearsals in person will be held weekly at <a
@@ -282,10 +285,10 @@
                                     class="fas fa-map-marker-alt dark-blue-text" target="_blank"> All
                                     Saints Church, Carshalton</em></a> once restrictions allow.
                         </p>
-                        
+
                         <div class="text-center">
                             <h3 class="text-shadow">Sign up for a play along ...</h3>
-                        
+
                             <button class="button" onclick="openForm()">
                                 Sign Up!
                             </button>
@@ -315,8 +318,8 @@
         </div>
     </section>
 
-     <!-- Sign Up Form  -->
-     <div class="form-container" id="form-display">
+    <!-- Sign Up Form  -->
+    <div class="form-container" id="form-display">
         <form onsubmit="return sendMail(this); closeForm();">
             <h2 class="text-center">Sign up to our Play Along mailing list ...</h2>
             <label class="sr-only" for="name">Name</label>
@@ -342,14 +345,41 @@
         </form>
     </div>
 
+    <!-- Contact Section  -->
+    <section class="contact-container" id="contact-section">
+        <div class="content-max-width">
+            <div class="contact-inner-container">
+                <h2>Get in touch...</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="contact-name" class="sr-only">Name</label>
+                        <input type="text" class="form-control" id="contact-name" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-email" class="sr-only">Email address</label>
+                        <input type="email" class="form-control" id="contact-email" placeholder="Email Address">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1" class="sr-only">Text Area</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"
+                            placeholder="Please enter your message here..."></textarea>
+                    </div>
+                    <div class="text-center  padding-top">
+                        <button class="button submit-button">
+                            Submit
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
 
-
+    <!-- Twitter  -->
     <div class="twitter-container">
         <div class="twitter-btn-container">
             <button class="twitter-button" onclick="twitterFunction()">Click for latest news and events! <i
                     class="fas fa-chevron-circle-down"></i></button>
         </div>
-        <!-- bug - button would work 2nd time until inline style -->
         <div id="twitter-feed" style="display: none;">
             <a class="twitter-timeline" data-lang="en" data-width="400" data-height="500"
                 href="https://twitter.com/BrassStudio?ref_src=twsrc%5Etfw">Tweets by BrassStudio</a>
@@ -375,7 +405,7 @@
                     </li>
                     <li class="social-nav-item">
                         <a href="https://www.twitter.com/brassstudio" target="_blank" rel="noopener"
-                            aria-hidden="true"><i class="fab fa-twitter yellow-text"></i>
+                            aria-hidden="true"><i class="fab fa-twitter orange-text"></i>
                             <span class="sr-only">Twitter</span>
                         </a>
                     </li>

@@ -18,6 +18,15 @@ function navbarScroll() {
   });
 }
 
+function contactScroll() {
+  $(".contact-button").click(function(){
+    $("html,body").animate(
+      {scrollTop: $("#contact-section").offset().top - 100, }, 1
+    )
+  })
+}
+
 $(document).ready(function () {
   navbarScroll();
+  contactScroll();
 });
