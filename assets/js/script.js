@@ -12,18 +12,20 @@ function twitterFunction() {
 function navbarScroll() {
   $(".navbar-item").click(function () {
     $("html,body").animate(
-      {scrollTop: $("#" + this.id + "-section").offset().top - 100, }, 1
+      { scrollTop: $("#" + this.id + "-section").offset().top - 100 },
+      1
     ),
-    $(".navbar-collapse").collapse("hide");
+      $(".navbar-collapse").collapse("hide");
   });
 }
 
 function contactScroll() {
-  $(".contact-button").click(function(){
+  $(".contact-button").click(function () {
     $("html,body").animate(
-      {scrollTop: $("#contact-section").offset().top - 100, }, 1
-    )
-  })
+      { scrollTop: $("#contact-section").offset().top - 100 },
+      1
+    );
+  });
 }
 
 $(document).ready(function () {
