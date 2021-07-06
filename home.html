@@ -59,7 +59,7 @@
 
     <!-- About Section  -->
     <section class="about-container">
-        <div class="content-max-width">
+        <div class="container">
             <h2 class="heading-left">About the Studio</h2>
             <div class="row">
                 <div class="col-12 col-md-8">
@@ -130,8 +130,8 @@
 
     <!-- Learn Section  -->
     <section class="learn-container" id="learn-section">
-        <div class="content-max-width">
-            <h2 class="">Come and Learn with us!</h2>
+        <div class="container">
+            <h2>Come and Learn with us!</h2>
             <div class="row">
                 <div class="col-12 col-md-8">
                     <p class="grey-text">
@@ -216,7 +216,7 @@
 
     <!-- Play Section  -->
     <section class="play-container" id="play-section">
-        <div class="content-max-width">
+        <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-6">
                     <h2>Join Our Big Brass Play Alongs!</h2>
@@ -318,10 +318,11 @@
         </div>
     </section>
 
+
     <!-- Sign Up Form  -->
     <div class="form-container" id="form-display">
         <form onsubmit="return sendMail(this); closeForm();">
-            <h2 class="text-center">Sign up to our Play Along mailing list ...</h2>
+            <h2 class="signup-header text-center">Sign up for the next play along...</h2>
             <label class="sr-only" for="name">Name</label>
             <input type="text" name="name" class="form-control" id="name" aria-describedby="name" placeholder="Name"
                 required>
@@ -334,20 +335,20 @@
             <label class="sr-only" for="signUpGrade">Grade</label>
             <input type="text" name="grade" class="form-control" id="signUpGrade" aria-describedby="grade"
                 placeholder="Grade" required>
-            <select class="form-control">
+            <select name="playalong_select" class="form-control">
                 <option>Choose a play along...</option>
                 <option>Beginner grade 1-4</option>
                 <option>Intermediate grade 4-6</option>
                 <option>Senior grade 6+</option>
             </select>
-            <button type="submit" class="button submit-btn">Submit</button>
-            <button type="button" class="button cancel-btn" onclick="closeForm()">Cancel</button>
+            <button type="submit" class="btn submit-btn">Submit</button>
+            <button type="reset" class="btn cancel-btn" onclick="closeForm()">Cancel</button>
         </form>
     </div>
 
     <!-- Contact Section  -->
     <section class="contact-container" id="contact-section">
-        <div class="content-max-width">
+        <div class="container">
             <div class="contact-inner-container">
                 <h2>Get in touch...</h2>
                 <form>

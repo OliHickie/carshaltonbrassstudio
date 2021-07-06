@@ -8,10 +8,11 @@ function closeForm() {
 
 function sendMail(contactForm){
     emailjs.send("service_z6cxmcd", "template_kz2p2kk", {
-        "parent_name": contactForm.name.value,
-        "parent_email": contactForm.email.value,
+        "name": contactForm.name.value,
+        "email": contactForm.email.value,
         "instrument": contactForm.instrument.value,
-        "grade": contactForm.grade.value
+        "grade": contactForm.grade.value,
+        "playalong": contactForm.playalong_select.value
     })
     .then(
         function(response) {
@@ -21,6 +22,7 @@ function sendMail(contactForm){
             console.log("FAILED", error);
         },
         alert("Thank you for applying, we will be in touch shortly!"),
+        
         closeForm()
         );
         return false;
