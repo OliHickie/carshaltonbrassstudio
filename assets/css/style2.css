@@ -85,7 +85,7 @@ p {
 }
 
 .purple-text {
-  color: #563d7c;
+  color: #c09cf7;
 }
 
 /* buttons */
@@ -111,6 +111,19 @@ p {
 
 .button:focus {
   outline: none;
+}
+
+.btt-button {
+  height: 64px;
+  width: 64px;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+}
+
+.btt-link {
+  cursor: pointer;
+  text-decoration: none;
 }
 
 /* Nav bar */
