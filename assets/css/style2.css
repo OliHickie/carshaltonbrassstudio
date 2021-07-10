@@ -80,6 +80,14 @@ p {
   color: #ffdfba;
 }
 
+.white-text {
+  color: #fff;
+}
+
+.purple-text {
+  color: #563d7c;
+}
+
 /* buttons */
 
 .button {
@@ -147,10 +155,23 @@ p {
   margin: 2% 3%;
 }
 
+.shopping-cart {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  font-size: 36px;
+  margin-right: 24px;
+}
+
 @media screen and (max-width: 960px) {
   .navbar li {
     font-size: 24px;
     padding: 5px;
+  }
+
+  .shopping-cart {
+    font-size: 24px;
   }
 }
 
@@ -300,6 +321,9 @@ p {
   margin: 0px 30px;
 }
 
+.schools-container {
+  background-color: #c09cf7;
+}
 
 /* Footer  */
 

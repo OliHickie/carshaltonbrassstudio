@@ -31,4 +31,8 @@ function contactScroll() {
 $(document).ready(function () {
   navbarScroll();
   contactScroll();
+
+  $('.btt-link').click(function(e) {
+    window.scrollTo(0,0)
+  })
 });
