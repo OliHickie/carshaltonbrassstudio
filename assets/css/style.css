@@ -127,6 +127,12 @@ p {
   text-decoration: none;
 }
 
+@media screen and (max-width: 960px) {
+  .button {
+    font-size: 28px;
+  }
+}
+
 /* Nav bar */
 
 .logo {
